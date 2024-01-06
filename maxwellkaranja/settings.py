@@ -26,7 +26,7 @@ SECRET_KEY = "django-insecure-_r6c_1ho!!8!r+=2+u@y)l$pgv9v$33b@+@pam%1qs^_t2gq3-
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["maxwellkaranja.me"]
+ALLOWED_HOSTS = ['127.0.0.1', "www.maxwellkaranja.me","maxwellkaranja.me"]
 
 
 # Application definition
@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     "django.contrib.contenttypes",
     "django.contrib.sessions",
     "django.contrib.messages",
+    "whitenoise.runserver_nostatic",
     "django.contrib.staticfiles",
     "portfolio",
 ]
@@ -122,6 +123,20 @@ STATIC_URL = 'static/'
 
 # for live server
 # STATIC_URL = 'http://static.m-khansoftwebs.com/static'
+
+
+#Whitenoise storages
+# On Django 4.2+
+STORAGES = {
+    "staticfiles": {
+        "BACKEND": "whitenoise.storage.CompressedManifestStaticFilesStorage",
+    },
+}
+
+# ##On older Django versions:
+# STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
+
+
 
     
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static'),]   
