@@ -15,8 +15,8 @@ def index(request):
         send_mail(
             f"Message from {name}",
             f"{message}\n\nSender's Name: {name}\nPhone: {phone}\nEmail: {email}",
-            email,  # Use the correct variable for sender's email
-            ['developermaxwellkaranja@gmail.com'],  # Use the correct variable for recipient's email
+            email,  #sender's email
+            ['developermaxwellkaranja@gmail.com', "mxkaranja@gmail.com"],  #recipient's email
             fail_silently=False,
         )
 
