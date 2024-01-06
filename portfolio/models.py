@@ -6,3 +6,6 @@ class emailingInfo(models.Model):
     email = models.EmailField(max_length=70, blank=True, null=True)
     message = models.TextField(max_length=10000, blank=True, null=True)
     
+    def __str__(self):
+        return self.email
+    
