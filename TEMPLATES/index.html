@@ -1,629 +1,1169 @@
 <!DOCTYPE html>
 {% load static %}
-<html>
+<html lang="en"
+  class=" sizes customelements history pointerevents postmessage webgl websockets cssanimations csscolumns csscolumns-width csscolumns-span csscolumns-fill csscolumns-gap csscolumns-rule csscolumns-rulecolor csscolumns-rulestyle csscolumns-rulewidth csscolumns-breakbefore csscolumns-breakafter csscolumns-breakinside flexbox picture srcset webworkers">
+
 <head>
-<title>Eng. Maxwell Karanja</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <title>Maxwell Karanja - Full Stack Developer | Portfolio</title>
+  <meta name="robots" content="noindex, follow">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="author" content="Maxwell Karanja -  Full Stack Developer">
+  <meta name="keywords"
+    content=" Full Stack Developer, UI&amp;UX Designer, HTML5, CSS3, Bootstrap, JavaScript, Python, PHP, SQL/MySQL, jQuery, AJAX, Laravel, Angular Js, Django, Flask , Linux, Web Developer, Frontend Developer, Backend Developer">
+  <meta name="title" content="Maxwell Karanja -  Full Stack Developer | Portfolio">
+  <meta name="description"
+    content=" Experienced Full Stack Developer with a demonstrated history of working in the internet industry. Building Web applications with Angular, PHP, Laravel, Python, Django, Flask, MySQL/Postgres and some other cool libraries and frameworks.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://maxwellkaranja.me/">
+  <meta property="og:title" content=" Maxwell Karanja |  Full Stack Developer ">
+  <meta property="og:description"
+    content=" Experienced Full Stack Developer with a demonstrated history of working in the internet industry. Building Web applications with Angular, PHP, Laravel, Python, Django, Flask, MySQL/Postgres and some other cool libraries and frameworks.">
+  <meta property="og:image" content="assets/images/favicon.ico">
+
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://developerMaxwell.com/">
+  <meta property="twitter:title" content=" Maxwell Karanja |  Full Stack Developer ">
+  <meta property="twitter:description"
+    content=" Experienced Full Stack Developer with a demonstrated history of working in the internet industry. Building Web applications with Angular, PHP, Laravel, Python, Django, Flask, MySQL/Postgres and some other cool libraries and frameworks.">
+  <meta property="twitter:image" content="assets/images/favicon.ico ">
 
 
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-GPJNXEF770"></script>
+  <!-- Favicon -->
+  <link rel="shortcut icon" type="image/x-icon" href="https://MaxwellKaranja.vercel.app/assets/images/favicon.ico">
+  <!--<base href="/">-->
+  <base href=".">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async="" src="./Maxwell Karanja - Full Stack Developer _ Portfolio_files/js"></script>
   <script>
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-	gtag('config', 'G-GPJNXEF770');
+    gtag('config', 'G-DTLCESP7FD');
   </script>
+  <style>
+    @import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&amp;display=swap);
+    @import url(https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&amp;display=swap);
+    @import url(https://fonts.googleapis.com/css2?family=Pacifico&display=swap);
 
+    :root {
+      --blue: #007bff;
+      --indigo: #6610f2;
+      --purple: #6f42c1;
+      --pink: #e83e8c;
+      --red: #dc3545;
+      --orange: #fd7e14;
+      --yellow: #ffc107;
+      --green: #28a745;
+      --teal: #20c997;
+      --cyan: #17a2b8;
+      --white: #fff;
+      --gray: #6c757d;
+      --gray-dark: #343a40;
+      --primary: #007bff;
+      --secondary: #6c757d;
+      --success: #28a745;
+      --info: #17a2b8;
+      --warning: #ffc107;
+      --danger: #dc3545;
+      --light: #f8f9fa;
+      --dark: #343a40;
+      --breakpoint-xs: 0;
+      --breakpoint-sm: 576px;
+      --breakpoint-md: 768px;
+      --breakpoint-lg: 992px;
+      --breakpoint-xl: 1200px;
+      --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+      --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace
+    }
 
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="keywords" content="Onepage Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template,
-Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
-<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
-<link href="{% static 'css/bootstrap.css' %}" rel='stylesheet' type='text/css'/>
-<link href="{% static 'css/style.css' %}" rel="stylesheet" type="text/css" media="all" />	    
-	    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    *,
+    :after,
+    :before {
+      box-sizing: border-box
+    }
 
-		
-<script src="{% static 'js/jquery.min.js' %}"></script>
-<script type="text/javascript" src="{% static 'js/move-top.js' %}"></script>
-<script type="text/javascript" src="{% static 'js/easing.js' %}"></script>
- <script type="text/javascript">
-		jQuery(document).ready(function($) {
-			$(".scroll").click(function(event){		
-				event.preventDefault();
-				$('html,body').animate({scrollTop:$(this.hash).offset().top},1200);
-			});
-		});
-	</script>
-<script src="{% static 'js/index.js' %}"></script>
+    html {
+      font-family: sans-serif;
+      line-height: 1.15;
+      -webkit-text-size-adjust: 100%;
+      -webkit-tap-highlight-color: transparent
+    }
 
-<link rel="stylesheet" href="{% static 'fontawesome-free-6.2.0-web\css\all.css' %}">
-<link rel="icon" href="{% static 'assets\images\icon.png' %}" sizes="32x32">
-<link rel="icon" href="{% static 'assets\images\icon.png" sizes="192x192' %}">
-<link rel="apple-touch-icon" href="{% static 'assets\images\icon.png' %}">
-  
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+      font-size: 1rem;
+      font-weight: 400;
+      line-height: 1.5;
+      color: #212529;
+      text-align: left;
+      background-color: #fff
+    }
+
+    @media print {
+
+      *,
+      :after,
+      :before {
+        text-shadow: none !important;
+        box-shadow: none !important
+      }
+
+      @page {
+        size: a3
+      }
+
+      body {
+        min-width: 992px !important
+      }
+    }
+
+    :root {
+      --color-primary: #ff014f;
+      --color-secondary: #f4f5f6;
+      --color-tertiary: #0d1013;
+      --color-gray: #f6f6f6;
+      --color-subtitle: #f9004d;
+      --background-color-1: linear-gradient(145deg, #1e2024, #23272b);
+      --background-color-2: #212428;
+      --shadow-1: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
+      --shadow-2: inset 21px 21px 19px #181a1d, inset -21px -21px 19px #202225;
+      --inner-shadow: 1px 4px 2px -3px #000000b3 inset, -1px -3px 3px -2px #fff3 inset;
+      --shadow-white-3: 5px 5px 15px #d1d9e6, -5px -5px 15px #fff;
+      --gradient-box-w: linear-gradient(145deg, #e2e8ec, #fff);
+      --gradient-red-hover: linear-gradient(145deg, #ff014f, #d11414);
+      --color-heading: #fff;
+      --color-heading-wv: #1e2125;
+      --color-body: #878e99;
+      --color-body-white: #3c3e41;
+      --color-lightn: #c4cfde;
+      --color-midgray: #878787;
+      --color-light: #e4e6ea;
+      --color-lighter: #ced0d4;
+      --color-lightest: #f0f2f5;
+      --color-border: #e6e6e6;
+      --color-white: #fff;
+      --color-white-75: #ffffffbf;
+      --color-success: #3eb75e;
+      --color-danger: #ff0003;
+      --color-warning: #ff8f3c;
+      --color-info: #1ba2db;
+      --color-facebook: #3b5997;
+      --color-twitter: #1ba1f2;
+      --color-youtube: #ed4141;
+      --color-linkedin: #0077b5;
+      --color-pinterest: #e60022;
+      --color-instagram: #c231a1;
+      --color-vimeo: #00adef;
+      --color-twitch: #6441a3;
+      --color-discord: #7289da;
+      --p-light: 300;
+      --p-regular: 400;
+      --p-medium: 500;
+      --p-semi-bold: 600;
+      --p-bold: 700;
+      --p-extra-bold: 800;
+      --p-black: 900;
+      --s-light: 300;
+      --s-regular: 400;
+      --s-medium: 500;
+      --s-semi-bold: 600;
+      --s-bold: 700;
+      --s-extra-bold: 800;
+      --s-black: 900;
+      --transition: 0.4s;
+      --font-primary: "Poppins", sans-serif;
+      --font-secondary: "Montserrat", sans-serif;
+      --font-size-b1: 18px;
+      --font-size-b2: 15px;
+      --font-size-b3: 14px;
+      --line-height-b1: 1.5;
+      --line-height-b2: 1.6;
+      --line-height-b3: 1.7;
+      --h1: 70px;
+      --h2: 60px;
+      --h3: 50px;
+      --h4: 40px;
+      --h5: 30px;
+      --h6: 20px
+    }
+
+    html {
+      margin: 0;
+      padding: 0;
+      font-size: 10px;
+      overflow: hidden;
+      overflow-y: auto;
+      scroll-behavior: smooth
+    }
+
+    body {
+      font-size: var(--font-size-b1);
+      line-height: var(--line-height-b1);
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      font-family: var(--font-primary);
+      color: var(--color-body);
+      font-weight: var(--p-regular)
+    }
+
+    @media only screen and (min-width: 992px) and (max-width: 1199px) {
+      body {
+        overflow: hidden
+      }
+    }
+
+    @media only screen and (min-width: 768px) and (max-width: 991px) {
+      body {
+        overflow: hidden
+      }
+    }
+
+    @media only screen and (max-width: 767px) {
+      body {
+        overflow: hidden
+      }
+    }
+
+    * {
+      box-sizing: border-box
+    }
+
+    body.main-body-color {
+      background-color: #212428
+    }
+  </style>
+  <link rel="stylesheet" href="{% static 'css/main.css' %}" rel="stylesheet" media="all"
+    onload="this.media=&#39;all&#39;"><noscript>
+    <link rel="stylesheet" href="styles.9cf27f65b88e01bdd86e.css">
+  </noscript>
+  <style></style>
+  <style>
+    input.ng-invalid.ng-touched[_ngcontent-jeb-c20] {
+      border: 1px solid red
+    }
+  </style>
 </head>
 
+<body class="main-body-color" data-spy="scroll" data-target=".navbar-example2" data-offset="70" data-aos-easing="ease"
+  data-aos-duration="400" data-aos-delay="0">
+  <header _ngcontent-jeb-c3="" class="rn-header haeder-default black-logo-version header--fixed header--sticky">
+    <div _ngcontent-jeb-c3="" class="header-wrapper rn-popup-mobile-menu m--0 row align-items-center">
+      <div _ngcontent-jeb-c3="" class="col-lg-2 col-6">
+        <div _ngcontent-jeb-c3="" class="header-left">
+          <div _ngcontent-jeb-c3="" class="logo"><a _ngcontent-jeb-c3="" href="https://MaxwellKaranja.vercel.app/"
+              class="logo"><span _ngcontent-jeb-c3=""> Maxwell <span _ngcontent-jeb-c3="" class="color-primary">Karanja
+                </span></span></a></div>
+        </div>
+      </div>
+      <div _ngcontent-jeb-c3="" class="col-lg-10 col-6">
+        <div _ngcontent-jeb-c3="" class="header-center">
+          <nav _ngcontent-jeb-c3="" id="sideNav" class="mainmenu-nav navbar-example2 d-none d-xl-block">
+            <ul _ngcontent-jeb-c3="" class="primary-menu nav nav-pills">
+              <li _ngcontent-jeb-c3="" class="nav-item"><a _ngcontent-jeb-c3=""
+                  href="https://MaxwellKaranja.vercel.app/#about" class="nav-link smoth-animation">About</a></li>
+              <li _ngcontent-jeb-c3="" class="nav-item"><a _ngcontent-jeb-c3=""
+                  href="https://MaxwellKaranja.vercel.app/#services" class="nav-link smoth-animation">Services</a></li>
+              <li _ngcontent-jeb-c3="" class="nav-item"><a _ngcontent-jeb-c3=""
+                  href="https://MaxwellKaranja.vercel.app/#resume" class="nav-link smoth-animation">Skills</a></li>
+              <li _ngcontent-jeb-c3="" class="nav-item"><a _ngcontent-jeb-c3=""
+                  href="https://MaxwellKaranja.vercel.app/#resume" class="nav-link smoth-animation">Experience</a></li>
+              <li _ngcontent-jeb-c3="" class="nav-item"><a _ngcontent-jeb-c3=""
+                  href="https://MaxwellKaranja.vercel.app/#portfolio" class="nav-link smoth-animation">Projects</a></li>
+              <li _ngcontent-jeb-c3="" class="nav-item"><a _ngcontent-jeb-c3=""
+                  href="https://MaxwellKaranja.vercel.app/#contacts" class="nav-link smoth-animation">Contact</a></li>
+            </ul>
+          </nav>
+          <div _ngcontent-jeb-c3="" class="header-right mr-2">
+            <div _ngcontent-jeb-c3="" class="hamberger-menu d-block d-xl-none"><i _ngcontent-jeb-c3="" id="menuBtn"
+                class="feather-menu humberger-menu"></i></div>
+            <div _ngcontent-jeb-c3="" class="close-menu d-block"><span _ngcontent-jeb-c3="" class="closeTrigger"><i
+                  _ngcontent-jeb-c3="" data-feather="x"></i></span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div _ngcontent-jeb-c3="" class="popup-mobile-menu new-to-be-added remove-visibility">
+    <div _ngcontent-jeb-c3="" class="inner">
+      <div _ngcontent-jeb-c3="" class="menu-top">
+        <div _ngcontent-jeb-c3="" class="menu-header">
+          <div _ngcontent-jeb-c3="" class="close-button"><button _ngcontent-jeb-c3=""
+              class="close-menu-activation close"><i _ngcontent-jeb-c3=""
+                class="fa fa-close color-primary"></i></button></div>
+        </div>
+        <p _ngcontent-jeb-c3="" class="discription"> I am a fully professional creative User Interface Designer &amp;
+          Full Stack Developer who loves in involving with latest web designing technologies. Feel free to contact me.
+        </p>
+      </div>
+      <div _ngcontent-jeb-c3="" class="content">
+        <ul _ngcontent-jeb-c3="" class="primary-menu nav nav-pills">
+          <li _ngcontent-jeb-c3="" class="nav-item"><a _ngcontent-jeb-c3=""
+              href="https://MaxwellKaranja.vercel.app/#about" class="nav-link smoth-animation">About</a></li>
+          <li _ngcontent-jeb-c3="" class="nav-item"><a _ngcontent-jeb-c3=""
+              href="https://MaxwellKaranja.vercel.app/#services" class="nav-link smoth-animation">Services</a></li>
+          <li _ngcontent-jeb-c3="" class="nav-item"><a _ngcontent-jeb-c3=""
+              href="https://MaxwellKaranja.vercel.app/#resume" class="nav-link smoth-animation">Skills</a></li>
+          <li _ngcontent-jeb-c3="" class="nav-item"><a _ngcontent-jeb-c3=""
+              href="https://MaxwellKaranja.vercel.app/#resume" class="nav-link smoth-animation">Experience</a></li>
+          <li _ngcontent-jeb-c3="" class="nav-item"><a _ngcontent-jeb-c3=""
+              href="https://MaxwellKaranja.vercel.app/#portfolio" class="nav-link smoth-animation">Projects</a></li>
+          <li _ngcontent-jeb-c3="" class="nav-item"><a _ngcontent-jeb-c3=""
+              href="https://MaxwellKaranja.vercel.app/#contacts" class="nav-link smoth-animation">Contact</a></li>
+        </ul>
+        <div _ngcontent-jeb-c3="" class="social-share-style-1 mt--40"><span _ngcontent-jeb-c3="" class="title">find with
+            me</span>
+          <ul _ngcontent-jeb-c3="" class="social-share d-flex liststyle mb-5">
+            <li _ngcontent-jeb-c3="" class="instagram"><a _ngcontent-jeb-c3=""
+                href="https://www.instagram.com/developerMaxwell/"><svg _ngcontent-jeb-c3=""
+                  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="feather feather-instagram">
+                  <rect _ngcontent-jeb-c3="" x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                  <path _ngcontent-jeb-c3="" d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                  <line _ngcontent-jeb-c3="" x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                </svg></a></li>
+            <li _ngcontent-jeb-c3="" class="linkedin"><a _ngcontent-jeb-c3=""
+                href="https://www.linkedin.com/in/MaxwellKaranja/"><svg _ngcontent-jeb-c3=""
+                  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="feather feather-linkedin">
+                  <path _ngcontent-jeb-c3=""
+                    d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                  <rect _ngcontent-jeb-c3="" x="2" y="9" width="4" height="12"></rect>
+                  <circle _ngcontent-jeb-c3="" cx="4" cy="4" r="2"></circle>
+                </svg></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div></app-header>
+  <main _ngcontent-jeb-c22="" class="main-page-wrapper"><app-homepage _ngcontent-jeb-c22="" _nghost-jeb-c4="">
+      <div _ngcontent-jeb-c4="" id="home" class="rn-slider-area">
+        <div _ngcontent-jeb-c4="" class="slide slider-style-1">
+          <div _ngcontent-jeb-c4="" class="container">
+            <div _ngcontent-jeb-c4="" class="row row--30 align-items-center">
+              <div _ngcontent-jeb-c4="" class="order-2 order-lg-1 col-lg-7 mt_md--50 mt_sm--50 mt_lg--30">
+                <div _ngcontent-jeb-c4="" class="content">
+                  <div _ngcontent-jeb-c4="" class="inner">
+                    <h1 _ngcontent-jeb-c4="" class="title">Hi, I’m <span _ngcontent-jeb-c4="">Maxwell</span><br
+                        _ngcontent-jeb-c4=""><span _ngcontent-jeb-c4="" id="page-top" class="header-caption"><span
+                          _ngcontent-jeb-c4="" class="cd-headline clip is-full-width"><span _ngcontent-jeb-c4=""
+                            class="cd-words-wrapper" style="width: 389.156px;"><b _ngcontent-jeb-c4=""
+                              class="is-hidden"> Fullstack Developer.</b><b _ngcontent-jeb-c4="" class="is-visible">
+                              UI&amp;UX Designer.</b><b _ngcontent-jeb-c4="" class="is-hidden"> Professional
+                              Coder.</b></span></span></span></h1>
+                    <div _ngcontent-jeb-c4="">
+                      <p _ngcontent-jeb-c4="" class="description"> Experienced Full Stack Developer with a demonstrated
+                        history of working in the internet industry. Building Web applications with Angular, PHP,
+                        Laravel, Python, Django, Flask, MySQL/Postgres and some other cool libraries and frameworks.
+                      </p><a _ngcontent-jeb-c4=""
+                        href="https://drive.google.com/file/d/10Vlsolq0t87kSPCFKOuCxM_ygvxVRTgx/view?usp=sharing"
+                        target="_blank" class="btn btn-outline-danger p-3 button-main mr-5">View Resume</a><a
+                        _ngcontent-jeb-c4="" href="https://MaxwellKaranja.vercel.app/#contacts"
+                        class="btn btn-outline-danger p-3 button-main">Contact Me</a>
+                      <div _ngcontent-jeb-c4="" class="social-share-inner-left mt-5">
+                        <ul _ngcontent-jeb-c4="" class="social-share d-flex liststyle">
+                          <li _ngcontent-jeb-c4="" class="facebook"><a _ngcontent-jeb-c4=""
+                              href="https://github.com/MaxwellKaranja" target="_blank"><i _ngcontent-jeb-c4=""
+                                class="fa fa-github"></i></a></li>
+                          <li _ngcontent-jeb-c4="" class="instagram"><a _ngcontent-jeb-c4="" target="_blank"
+                              href="https://www.linkedin.com/in/MaxwellKaranja/"><i _ngcontent-jeb-c4=""
+                                class="fa fa-linkedin"></i></a></li>
+                          <li _ngcontent-jeb-c4="" class="linkedin"><a _ngcontent-jeb-c4=""
+                              href="malto:mxkaranja@gmail.com"><i _ngcontent-jeb-c4="" class="fa fa-google"></i></a>
+                          </li>
+                          <li _ngcontent-jeb-c4="" class="linkedin"><a _ngcontent-jeb-c4="" target="_blank"
+                              href="https://twitter.com/Maxwellk"><i _ngcontent-jeb-c4="" class="fa fa-twitter"></i></a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div _ngcontent-jeb-c4="" class="order-1 order-lg-2 col-lg-5 my-profile">
+                <div _ngcontent-jeb-c4="" class="thumbnail">
+                  <div _ngcontent-jeb-c4="" class="inner"><img _ngcontent-jeb-c4=""
+                      src="./Maxwell Karanja - Full Stack Developer _ Portfolio_files/me.png" alt="My Profile Picture">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </app-homepage><app-who-i-am _ngcontent-jeb-c22="" _nghost-jeb-c5="">
+      <div _ngcontent-jeb-c5="" id="about" class="about-me">
+        <div _ngcontent-jeb-c5="" class="container">
+          <div _ngcontent-jeb-c5="" class="row">
+            <div _ngcontent-jeb-c5="" class="col-lg-5">
+              <div _ngcontent-jeb-c5="" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100"
+                data-aos-once="true" class="image-area aos-init aos-animate">
+                <div _ngcontent-jeb-c5="" class="thumbnail"><img _ngcontent-jeb-c5=""
+                    src="./Maxwell Karanja - Full Stack Developer _ Portfolio_files/about.svg" alt=""></div>
+              </div>
+            </div>
+            <div _ngcontent-jeb-c5="" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100"
+              data-aos-once="true" class="col-lg-7 mt_sm--30 aos-init aos-animate">
+              <div _ngcontent-jeb-c5="" class="contant">
+                <div _ngcontent-jeb-c5="" class="section-title text-left">
+                  <h4 _ngcontent-jeb-c5="" class="title">About Me</h4>
+                </div>
+                <p _ngcontent-jeb-c5="" class="description"> I am a Full Stack Developer based in Kenya, with a passion
+                  for creating beautiful and intuitive user experiences. </p>
+                <p _ngcontent-jeb-c5="" class="description"> I have a strong background in both front-end and back-end
+                  development. I am a self-motivated, hard-working and dedicated individual. Also team player, and
+                  always looking to learn new skills and techniques. </p>
+                <p _ngcontent-jeb-c5="" class="description"><i _ngcontent-jeb-c5="" class="fa fa-check"></i> I do
+                  integration of third party services such as Firebase/ AWS / Digital Ocean / Mailchimp and also have
+                  experience in building RESTful APIs. </p>
+                <p _ngcontent-jeb-c5="" class="description"><i _ngcontent-jeb-c5="" class="fa fa-check"></i> I also do
+                  integration of payment services such as M-Pesa, Paypal, Flutterwave and Stripe. </p><a
+                  _ngcontent-jeb-c5="" href="https://MaxwellKaranja.vercel.app/#contacts" class="rn-btn"><span
+                    _ngcontent-jeb-c5="">Hire Me</span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </app-who-i-am><app-what-i-do _ngcontent-jeb-c22="" _nghost-jeb-c6="">
+      <div _ngcontent-jeb-c6="" id="services" class="rn-service-area rn-section-gap section-separator">
+        <div _ngcontent-jeb-c6="" class="container">
+          <div _ngcontent-jeb-c6="" class="row">
+            <div _ngcontent-jeb-c6="" class="col-lg-12">
+              <div _ngcontent-jeb-c6="" data-aos="fade-up" data-aos-duration="500" data-aos-delay="100"
+                data-aos-once="true" class="section-title text-left aos-init aos-animate">
+                <h2 _ngcontent-jeb-c6="" class="title">What I Do</h2>
+              </div>
+            </div>
+          </div>
+          <div _ngcontent-jeb-c6="" class="row row--25 mt_md--10 mt_sm--10">
+            <div _ngcontent-jeb-c6="" data-aos="fade-up" data-aos-duration="500" data-aos-delay="100"
+              data-aos-once="true"
+              class="col-lg-6 col-xl-4 col-md-6 col-sm-12 col-12 mt--50 mt_md--30 mt_sm--30 aos-init aos-animate">
+              <div _ngcontent-jeb-c6="" class="rn-service">
+                <div _ngcontent-jeb-c6="" class="inner">
+                  <div _ngcontent-jeb-c6="" class="content">
+                    <h4 _ngcontent-jeb-c6="" class="title"><a _ngcontent-jeb-c6=""
+                        href="https://MaxwellKaranja.vercel.app/#">Payment Integration</a></h4>
+                    <p _ngcontent-jeb-c6="" class="description"> I do payment Integration to automate the process of
+                      payment. I can integrate with payment gateways. </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div _ngcontent-jeb-c6="" data-aos="fade-up" data-aos-duration="500" data-aos-delay="300"
+              data-aos-once="true"
+              class="col-lg-6 col-xl-4 col-md-6 col-sm-12 col-12 mt--50 mt_md--30 mt_sm--30 aos-init aos-animate">
+              <div _ngcontent-jeb-c6="" class="rn-service">
+                <div _ngcontent-jeb-c6="" class="inner">
+                  <div _ngcontent-jeb-c6="" class="content">
+                    <h4 _ngcontent-jeb-c6="" class="title"><a _ngcontent-jeb-c6=""
+                        href="https://MaxwellKaranja.vercel.app/#">Web Development</a></h4>
+                    <p _ngcontent-jeb-c6="" class="description"> I do web development for both frontend and backend. I
+                      can build a website for you or your business. </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div _ngcontent-jeb-c6="" data-aos="fade-up" data-aos-duration="500" data-aos-delay="500"
+              data-aos-once="true"
+              class="col-lg-6 col-xl-4 col-md-6 col-sm-12 col-12 mt--50 mt_md--30 mt_sm--30 aos-init aos-animate">
+              <div _ngcontent-jeb-c6="" class="rn-service">
+                <div _ngcontent-jeb-c6="" class="inner">
+                  <div _ngcontent-jeb-c6="" class="content">
+                    <h4 _ngcontent-jeb-c6="" class="title"><a _ngcontent-jeb-c6=""
+                        href="https://MaxwellKaranja.vercel.app/#">API design/Integration</a></h4>
+                    <p _ngcontent-jeb-c6="" class="description"> Developing highly secure, fast and scalable Restful API
+                      for your application. </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </app-what-i-do><app-experience _ngcontent-jeb-c22="" _nghost-jeb-c7="">
+      <div _ngcontent-jeb-c7="" id="resume" class="rn-resume-area rn-section-gap section-separator">
+        <div _ngcontent-jeb-c7="" class="container">
+          <div _ngcontent-jeb-c7="" class="row">
+            <div _ngcontent-jeb-c7="" class="col-lg-12">
+              <div _ngcontent-jeb-c7="" class="section-title text-center"><span _ngcontent-jeb-c7="" class="subtitle">3+
+                  Years of Experience</span>
+                <h2 _ngcontent-jeb-c7="" class="title">Skills &amp; Experiences</h2>
+              </div>
+            </div>
+          </div>
+          <div _ngcontent-jeb-c7="" class="row mt--45">
+            <div _ngcontent-jeb-c7="" class="col-lg-12">
+              <ul _ngcontent-jeb-c7="" id="myTabs" role="tablist" class="rn-nav-list nav nav-tabs">
+                <li _ngcontent-jeb-c7="" class="nav-item"><a _ngcontent-jeb-c7="" id="professional-tab"
+                    data-toggle="tab" href="https://MaxwellKaranja.vercel.app/#professional" role="tab"
+                    aria-controls="professional" aria-selected="false" class="nav-link">professional Skills</a></li>
+                <li _ngcontent-jeb-c7="" class="nav-item"><a _ngcontent-jeb-c7="" id="experience-tab" data-toggle="tab"
+                    href="https://MaxwellKaranja.vercel.app/#experience" role="tab" aria-controls="experience"
+                    aria-selected="true" class="nav-link active">experience</a></li>
+              </ul>
+              <div _ngcontent-jeb-c7="" id="myTabContents" class="rn-nav-content tab-content">
+                <div _ngcontent-jeb-c7="" id="professional" role="tabpanel" aria-labelledby="professional-tab"
+                  class="tab-pane fade">
+                  <div _ngcontent-jeb-c7="" class="personal-experience-inner mt--40">
+                    <div _ngcontent-jeb-c7="" class="row row--40">
+                      <div _ngcontent-jeb-c7="" class="col-lg-6 col-md-6 col-12">
+                        <div _ngcontent-jeb-c7="" class="progress-wrapper">
+                          <div _ngcontent-jeb-c7="" class="content">
+                            <h4 _ngcontent-jeb-c7="" class="maintitle">Design Skills</h4>
+                            <div _ngcontent-jeb-c7="" class="progress-charts">
+                              <h6 _ngcontent-jeb-c7="" class="heading heading-h6">FIGMA</h6>
+                              <div _ngcontent-jeb-c7="" class="progress">
+                                <div _ngcontent-jeb-c7="" data-wow-duration="0.6s" data-wow-delay=".4s"
+                                  role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"
+                                  class="progress-bar wow fadeInLeft"
+                                  style="width: 95%; visibility: visible; animation-duration: 0.6s; animation-delay: 0.4s;">
+                                  <span _ngcontent-jeb-c7="" class="percent-label">95%</span></div>
+                              </div>
+                            </div>
+                            <div _ngcontent-jeb-c7="" class="progress-charts">
+                              <h6 _ngcontent-jeb-c7="" class="heading heading-h6">DESIGN</h6>
+                              <div _ngcontent-jeb-c7="" class="progress">
+                                <div _ngcontent-jeb-c7="" data-wow-duration="0.9s" data-wow-delay=".7s"
+                                  role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"
+                                  class="progress-bar wow fadeInLeft"
+                                  style="width: 95%; visibility: visible; animation-duration: 0.9s; animation-delay: 0.7s;">
+                                  <span _ngcontent-jeb-c7="" class="percent-label">95%</span></div>
+                              </div>
+                            </div>
+                            <div _ngcontent-jeb-c7="" class="progress-charts">
+                              <h6 _ngcontent-jeb-c7="" class="heading heading-h6">PHOTOSHOP</h6>
+                              <div _ngcontent-jeb-c7="" class="progress">
+                                <div _ngcontent-jeb-c7="" data-wow-duration="0.5s" data-wow-delay=".3s"
+                                  role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"
+                                  class="progress-bar wow fadeInLeft"
+                                  style="width: 80%; visibility: visible; animation-duration: 0.5s; animation-delay: 0.3s;">
+                                  <span _ngcontent-jeb-c7="" class="percent-label">80%</span></div>
+                              </div>
+                            </div>
+                            <div _ngcontent-jeb-c7="" class="progress-charts">
+                              <h6 _ngcontent-jeb-c7="" class="heading heading-h6">ADOBE ILLUSTRATOR</h6>
+                              <div _ngcontent-jeb-c7="" class="progress">
+                                <div _ngcontent-jeb-c7="" data-wow-duration="0.8s" data-wow-delay=".6s"
+                                  role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"
+                                  class="progress-bar wow fadeInLeft"
+                                  style="width: 80%; visibility: visible; animation-duration: 0.8s; animation-delay: 0.6s;">
+                                  <span _ngcontent-jeb-c7="" class="percent-label">80%</span></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div _ngcontent-jeb-c7="" class="col-lg-6 col-md-6 col-12 mt_sm--60">
+                        <div _ngcontent-jeb-c7="" class="progress-wrapper">
+                          <div _ngcontent-jeb-c7="" class="content">
+                            <h4 _ngcontent-jeb-c7="" class="maintitle">Development Skills</h4>
+                            <div _ngcontent-jeb-c7="" class="progress-charts">
+                              <h6 _ngcontent-jeb-c7="" class="heading heading-h6 text-uppercase">Frontend</h6>
+                              <div _ngcontent-jeb-c7="" class="progress">
+                                <div _ngcontent-jeb-c7="" data-wow-duration="0.5s" data-wow-delay=".3s"
+                                  role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"
+                                  class="progress-bar wow fadeInLeft"
+                                  style="width: 92%; visibility: visible; animation-duration: 0.5s; animation-delay: 0.3s;">
+                                  <span _ngcontent-jeb-c7="" class="percent-label">92%</span></div>
+                              </div>
+                            </div>
+                            <div _ngcontent-jeb-c7="" class="progress-charts">
+                              <h6 _ngcontent-jeb-c7="" class="heading heading-h6">Backend</h6>
+                              <div _ngcontent-jeb-c7="" class="progress">
+                                <div _ngcontent-jeb-c7="" data-wow-duration="0.6s" data-wow-delay=".4s"
+                                  role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"
+                                  class="progress-bar wow fadeInLeft"
+                                  style="width: 96%; visibility: visible; animation-duration: 0.6s; animation-delay: 0.4s;">
+                                  <span _ngcontent-jeb-c7="" class="percent-label">96%</span></div>
+                              </div>
+                            </div>
+                            <div _ngcontent-jeb-c7="" class="progress-charts">
+                              <h6 _ngcontent-jeb-c7="" class="heading heading-h6">DJANGO(PYTHON)</h6>
+                              <div _ngcontent-jeb-c7="" class="progress">
+                                <div _ngcontent-jeb-c7="" data-wow-duration="0.7s" data-wow-delay=".5s"
+                                  role="progressbar" aria-valuenow="83" aria-valuemin="0" aria-valuemax="100"
+                                  class="progress-bar wow fadeInLeft"
+                                  style="width: 90%; visibility: visible; animation-duration: 0.7s; animation-delay: 0.5s;">
+                                  <span _ngcontent-jeb-c7="" class="percent-label">90%</span></div>
+                              </div>
+                            </div>
+                            <div _ngcontent-jeb-c7="" class="progress-charts">
+                              <h6 _ngcontent-jeb-c7="" class="heading heading-h6">FLASK(PYTHON)</h6>
+                              <div _ngcontent-jeb-c7="" class="progress">
+                                <div _ngcontent-jeb-c7="" data-wow-duration="0.7s" data-wow-delay=".5s"
+                                  role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"
+                                  class="progress-bar wow fadeInLeft"
+                                  style="width: 80%; visibility: visible; animation-duration: 0.7s; animation-delay: 0.5s;">
+                                  <span _ngcontent-jeb-c7="" class="percent-label">80%</span></div>
+                              </div>
+                            </div>
+                            <div _ngcontent-jeb-c7="" class="progress-charts">
+                              <h6 _ngcontent-jeb-c7="" class="heading heading-h6">LARAVEL(PHP)</h6>
+                              <div _ngcontent-jeb-c7="" class="progress">
+                                <div _ngcontent-jeb-c7="" data-wow-duration="0.8s" data-wow-delay=".6s"
+                                  role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"
+                                  class="progress-bar wow fadeInLeft"
+                                  style="width: 86%; visibility: visible; animation-duration: 0.8s; animation-delay: 0.6s;">
+                                  <span _ngcontent-jeb-c7="" class="percent-label">86%</span></div>
+                              </div>
+                            </div>
+                            <div _ngcontent-jeb-c7="" class="progress-charts">
+                              <h6 _ngcontent-jeb-c7="" class="heading heading-h6">ANGULAR</h6>
+                              <div _ngcontent-jeb-c7="" class="progress">
+                                <div _ngcontent-jeb-c7="" data-wow-duration="0.9s" data-wow-delay=".7s"
+                                  role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"
+                                  class="progress-bar wow fadeInLeft"
+                                  style="width: 85%; visibility: visible; animation-duration: 0.9s; animation-delay: 0.7s;">
+                                  <span _ngcontent-jeb-c7="" class="percent-label">85%</span></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div _ngcontent-jeb-c7="" id="experience" role="tabpanel" aria-labelledby="experience-tab"
+                  class="tab-pane fade active show">
+                  <div _ngcontent-jeb-c7="" class="personal-experience-inner mt--40">
+                    <div _ngcontent-jeb-c7="" class="row">
+                      <div _ngcontent-jeb-c7="" class="col-lg-6 col-md-12 col-12">
+                        <div _ngcontent-jeb-c7="" class="content">
+                          <div _ngcontent-jeb-c7="" class="experience-list">
+                            <div _ngcontent-jeb-c7="" class="resume-single-list">
+                              <div _ngcontent-jeb-c7="" class="inner">
+                                <div _ngcontent-jeb-c7="" class="heading">
+                                  <div _ngcontent-jeb-c7="" class="title">
+                                    <h4 _ngcontent-jeb-c7="">Premiersoft Technologies</h4><span
+                                      _ngcontent-jeb-c7="">Fullstack Developer (Oct 2020 - Mar 2021)</span>
+                                  </div>
+                                </div>
+                                <p _ngcontent-jeb-c7="" class="description"><i _ngcontent-jeb-c7=""
+                                    class="fa fa-check"></i> Developing frontend and backend architecture. <br
+                                    _ngcontent-jeb-c7=""><i _ngcontent-jeb-c7="" class="fa fa-check"></i> Creating
+                                  servers and databases for functionality. <br _ngcontent-jeb-c7=""><i
+                                    _ngcontent-jeb-c7="" class="fa fa-check"></i> Ensuring cross-platform optimization
+                                  for mobile phones. <br _ngcontent-jeb-c7=""></p>
+                              </div>
+                            </div>
+                            <div _ngcontent-jeb-c7="" class="resume-single-list">
+                              <div _ngcontent-jeb-c7="" class="inner">
+                                <div _ngcontent-jeb-c7="" class="heading">
+                                  <div _ngcontent-jeb-c7="" class="title">
+                                    <h4 _ngcontent-jeb-c7=""> Korean Kenya Solar Limited</h4><span
+                                      _ngcontent-jeb-c7="">Web Developer (Sept 2020 - Sept 2020)</span>
+                                  </div>
+                                </div>
+                                <p _ngcontent-jeb-c7="" class="description"><i _ngcontent-jeb-c7=""
+                                    class="fa fa-check"></i> Developing and maintaining Company websites, systems. <br
+                                    _ngcontent-jeb-c7=""><i _ngcontent-jeb-c7="" class="fa fa-check"></i> Training new
+                                  employees on how to use company systems. <br _ngcontent-jeb-c7=""><i
+                                    _ngcontent-jeb-c7="" class="fa fa-check"></i> Computer Maintenance and Support. <br
+                                    _ngcontent-jeb-c7=""></p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div _ngcontent-jeb-c7="" class="col-lg-6 col-md-12 col-12 mt_md--60 mt_sm--60">
+                        <div _ngcontent-jeb-c7="" class="content">
+                          <div _ngcontent-jeb-c7="" class="experience-list">
+                            <div _ngcontent-jeb-c7="" class="resume-single-list">
+                              <div _ngcontent-jeb-c7="" class="inner">
+                                <div _ngcontent-jeb-c7="" class="heading">
+                                  <div _ngcontent-jeb-c7="" class="title">
+                                    <h4 _ngcontent-jeb-c7=""> Computer Ways Company Limited</h4><span
+                                      _ngcontent-jeb-c7="">Engineer, Networking (Feb 2020 - April 2020)</span>
+                                  </div>
+                                </div>
+                                <p _ngcontent-jeb-c7="" class="description"><i _ngcontent-jeb-c7=""
+                                    class="fa fa-check"></i> Installing Wi-Fi access points. <br _ngcontent-jeb-c7=""><i
+                                    _ngcontent-jeb-c7="" class="fa fa-check"></i> Configuring routers. <br
+                                    _ngcontent-jeb-c7=""><i _ngcontent-jeb-c7="" class="fa fa-check"></i> Computer
+                                  Maintenance and Support. <br _ngcontent-jeb-c7=""><i _ngcontent-jeb-c7=""
+                                    class="fa fa-check"></i> Installation of New Wifi Network. </p>
+                              </div>
+                            </div>
+                            <div _ngcontent-jeb-c7="" class="resume-single-list">
+                              <div _ngcontent-jeb-c7="" class="inner">
+                                <div _ngcontent-jeb-c7="" class="heading">
+                                  <div _ngcontent-jeb-c7="" class="title">
+                                    <h4 _ngcontent-jeb-c7="">Web Cloud Ltd Kenya</h4><span _ngcontent-jeb-c7="">Web
+                                      Developer and Graphic Designer (Jan 2020 - Feb 2020)</span>
+                                  </div>
+                                </div>
+                                <p _ngcontent-jeb-c7="" class="description"><i _ngcontent-jeb-c7=""
+                                    class="fa fa-check"></i> Developing and maintaining Company websites and systems.
+                                  <br _ngcontent-jeb-c7=""><i _ngcontent-jeb-c7="" class="fa fa-check"></i> Creating of
+                                  Logos and Systems UIs. <br _ngcontent-jeb-c7=""><i _ngcontent-jeb-c7=""
+                                    class="fa fa-check"></i> Computer Maintenance. <br _ngcontent-jeb-c7=""><i
+                                    _ngcontent-jeb-c7="" class="fa fa-check"></i> Maintenance of Wifi Network within the
+                                  company. </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </app-experience><app-projects _ngcontent-jeb-c22="" _nghost-jeb-c8="">
+      <div _ngcontent-jeb-c8="" id="portfolio" class="section-separator">
+        <div _ngcontent-jeb-c8="" class="container">
+          <div _ngcontent-jeb-c8="" class="row">
+            <div _ngcontent-jeb-c8="" class="col-lg-12">
+              <div _ngcontent-jeb-c8="" class="section-title text-center">
+                <h2 _ngcontent-jeb-c8="" class="title">Projects</h2>
+              </div>
+            </div>
+          </div>
+          <div _ngcontent-jeb-c8="" class="row row--25 mt--10 mt_md--10 mt_sm--10">
+            <div _ngcontent-jeb-c8="" data-aos="fade-up" data-aos-delay="100" data-aos-once="true"
+              class="col-lg-6 col-xl-4 col-md-6 col-12 mt--50 mt_md--30 mt_sm--30 aos-init aos-animate">
+              <div _ngcontent-jeb-c8="" data-toggle="modal" data-target="#projectThree" class="rn-portfolio">
+                <div _ngcontent-jeb-c8="" class="inner">
+                  <div _ngcontent-jeb-c8="" class="thumbnail"><a _ngcontent-jeb-c8="" href="javascript:void(0)"><img
+                        _ngcontent-jeb-c8="" src="./Maxwell Karanja - Full Stack Developer _ Portfolio_files/image3.png"
+                        alt="Personal Portfolio Images"></a></div>
+                  <div _ngcontent-jeb-c8="" class="content">
+                    <div _ngcontent-jeb-c8="" class="category-info">
+                      <div _ngcontent-jeb-c8="" class="category-list"><a _ngcontent-jeb-c8=""
+                          href="javascript:void(0)">Dalbit Petroleum</a></div>
+                    </div>
+                    <h4 _ngcontent-jeb-c8="" class="title"><a _ngcontent-jeb-c8="" href="javascript:void(0)"
+                        class="text-capitalize"> Company that engages in the trading, transport and management of
+                        Petroleum products in Africa. </a></h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div _ngcontent-jeb-c8="" data-aos="fade-up" data-aos-delay="100" data-aos-once="true"
+              class="col-lg-6 col-xl-4 col-md-6 col-12 mt--50 mt_md--30 mt_sm--30 aos-init aos-animate">
+              <div _ngcontent-jeb-c8="" data-toggle="modal" data-target="#projectOne" class="rn-portfolio">
+                <div _ngcontent-jeb-c8="" class="inner">
+                  <div _ngcontent-jeb-c8="" class="thumbnail"><a _ngcontent-jeb-c8="" href="javascript:void(0)"><img
+                        _ngcontent-jeb-c8="" src="./Maxwell Karanja - Full Stack Developer _ Portfolio_files/image.png"
+                        alt="Personal Portfolio Images"></a></div>
+                  <div _ngcontent-jeb-c8="" class="content">
+                    <div _ngcontent-jeb-c8="" class="category-info">
+                      <div _ngcontent-jeb-c8="" class="category-list"><a _ngcontent-jeb-c8=""
+                          href="javascript:void(0)">Instagram Shops</a></div>
+                    </div>
+                    <h4 _ngcontent-jeb-c8="" class="title"><a _ngcontent-jeb-c8="" href="javascript:void(0)"
+                        class="text-capitalize"> Platform Where You Discover New Instagram Shops. </a></h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div _ngcontent-jeb-c8="" data-aos="fade-up" data-aos-delay="100" data-aos-once="true"
+              class="col-lg-6 col-xl-4 col-md-6 col-12 mt--50 mt_md--30 mt_sm--30 aos-init aos-animate">
+              <div _ngcontent-jeb-c8="" data-toggle="modal" data-target="#projectTwo" class="rn-portfolio">
+                <div _ngcontent-jeb-c8="" class="inner">
+                  <div _ngcontent-jeb-c8="" class="thumbnail"><a _ngcontent-jeb-c8="" href="javascript:void(0)"><img
+                        _ngcontent-jeb-c8="" src="./Maxwell Karanja - Full Stack Developer _ Portfolio_files/image2.png"
+                        alt="Personal Portfolio Images"></a></div>
+                  <div _ngcontent-jeb-c8="" class="content">
+                    <div _ngcontent-jeb-c8="" class="category-info">
+                      <div _ngcontent-jeb-c8="" class="category-list"><a _ngcontent-jeb-c8=""
+                          href="javascript:void(0)">Business Forum System</a></div>
+                    </div>
+                    <h4 _ngcontent-jeb-c8="" class="title"><a _ngcontent-jeb-c8="" href="javascript:void(0)"
+                        class="text-capitalize"> Web application that allows management of a business forum. </a></h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div _ngcontent-jeb-c8="" data-aos="fade-up" data-aos-delay="100" data-aos-once="true"
+              class="col-lg-6 col-xl-4 col-md-6 col-12 mt--50 mt_md--30 mt_sm--30 aos-init aos-animate">
+              <div _ngcontent-jeb-c8="" data-toggle="modal" data-target="#projectFour" class="rn-portfolio">
+                <div _ngcontent-jeb-c8="" class="inner">
+                  <div _ngcontent-jeb-c8="" class="thumbnail"><a _ngcontent-jeb-c8="" href="javascript:void(0)"><img
+                        _ngcontent-jeb-c8="" src="./Maxwell Karanja - Full Stack Developer _ Portfolio_files/image4.png"
+                        alt="Personal Portfolio Images"></a></div>
+                  <div _ngcontent-jeb-c8="" class="content">
+                    <div _ngcontent-jeb-c8="" class="category-info">
+                      <div _ngcontent-jeb-c8="" class="category-list"><a _ngcontent-jeb-c8=""
+                          href="javascript:void(0)">Dangote</a></div>
+                    </div>
+                    <h6 _ngcontent-jeb-c8="" class="title"><a _ngcontent-jeb-c8="" href="javascript:void(0)"
+                        class="text-capitalize"> A company website to showcase the products of the company. </a></h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div _ngcontent-jeb-c8="" data-aos="fade-up" data-aos-delay="100" data-aos-once="true"
+              class="col-lg-6 col-xl-4 col-md-6 col-12 mt--50 mt_md--30 mt_sm--30 aos-init aos-animate">
+              <div _ngcontent-jeb-c8="" data-toggle="modal" data-target="#projectFive" class="rn-portfolio">
+                <div _ngcontent-jeb-c8="" class="inner">
+                  <div _ngcontent-jeb-c8="" class="thumbnail"><a _ngcontent-jeb-c8="" href="javascript:void(0)"><img
+                        _ngcontent-jeb-c8=""
+                        src="./Maxwell Karanja - Full Stack Developer _ Portfolio_files/direct.co.ke.jpeg"
+                        alt="Direct.co.ke"></a></div>
+                  <div _ngcontent-jeb-c8="" class="content">
+                    <div _ngcontent-jeb-c8="" class="category-info">
+                      <div _ngcontent-jeb-c8="" class="category-list"><a _ngcontent-jeb-c8=""
+                          href="javascript:void(0)">Direct.co.ke</a></div>
+                    </div>
+                    <h6 _ngcontent-jeb-c8="" class="title"><a _ngcontent-jeb-c8="" href="javascript:void(0)"
+                        class="text-capitalize"> Direct is platform that allows showrooms, auctions and customers to
+                        interact with each other. </a></h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div _ngcontent-jeb-c8="" data-aos="fade-up" data-aos-delay="100" data-aos-once="true"
+              class="col-lg-6 col-xl-4 col-md-6 col-12 mt--50 mt_md--30 mt_sm--30 aos-init aos-animate">
+              <div _ngcontent-jeb-c8="" data-toggle="modal" data-target="#projectSix" class="rn-portfolio">
+                <div _ngcontent-jeb-c8="" class="inner">
+                  <div _ngcontent-jeb-c8="" class="thumbnail"><a _ngcontent-jeb-c8="" href="javascript:void(0)"><img
+                        _ngcontent-jeb-c8="" src="./Maxwell Karanja - Full Stack Developer _ Portfolio_files/image6.png"
+                        alt="Personal Portfolio Images"></a></div>
+                  <div _ngcontent-jeb-c8="" class="content">
+                    <div _ngcontent-jeb-c8="" class="category-info">
+                      <div _ngcontent-jeb-c8="" class="category-list"><a _ngcontent-jeb-c8=""
+                          href="javascript:void(0)">PAG Kenya</a></div>
+                    </div>
+                    <h6 _ngcontent-jeb-c8="" class="title"><a _ngcontent-jeb-c8="" href="javascript:void(0)"
+                        class="text-capitalize"> Church website that allows people to know about the church. </a></h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div _ngcontent-jeb-c8="" class="col-md-12 text-center mt-5 mb-5"><a _ngcontent-jeb-c8=""
+                href="https://github.com/MaxwellKaranja" target="_blank" class="rn-btn"><span _ngcontent-jeb-c8="">View
+                  More Projects</span><i _ngcontent-jeb-c8="" class="fa fa-arrow-right"></i></a></div>
+          </div>
+        </div>
+      </div>
+      <div _ngcontent-jeb-c8="" id="projectOne" tabindex="-1" role="dialog" aria-hidden="true" class="modal fade">
+        <div _ngcontent-jeb-c8="" role="document" class="modal-dialog modal-dialog-centered">
+          <div _ngcontent-jeb-c8="" class="modal-content">
+            <div _ngcontent-jeb-c8="" class="modal-header"><button _ngcontent-jeb-c8="" type="button"
+                data-dismiss="modal" aria-label="Close" class="close"><span _ngcontent-jeb-c8="" aria-hidden="true"><i
+                    _ngcontent-jeb-c8="" class="fa fa-close"></i></span></button></div>
+            <div _ngcontent-jeb-c8="" class="modal-body">
+              <div _ngcontent-jeb-c8="" class="row align-items-center">
+                <div _ngcontent-jeb-c8="" class="col-lg-6">
+                  <div _ngcontent-jeb-c8="" class="portfolio-popup-thumbnail">
+                    <div _ngcontent-jeb-c8="" class="image"><img _ngcontent-jeb-c8=""
+                        src="./Maxwell Karanja - Full Stack Developer _ Portfolio_files/image.png" alt="slide"
+                        class="w-100"></div>
+                  </div>
+                </div>
+                <div _ngcontent-jeb-c8="" class="col-lg-6">
+                  <div _ngcontent-jeb-c8="" class="text-content">
+                    <h3 _ngcontent-jeb-c8=""><span _ngcontent-jeb-c8="">Category - Design/Frontend/Backend</span> Web
+                      Development. </h3>
+                    <p _ngcontent-jeb-c8="" class="mb--30"> There are many businesses on Instagram we are not aware of.
+                      It takes time to find them however we are here to make these businesses known by leaving a review
+                      after you shop so that people can discover these great hidden gems. </p>
+                    <p _ngcontent-jeb-c8=""> List your amazing shop and allow shoppers to find you and leave a review
+                      &amp; rating after they shop with you. </p>
+                    <div _ngcontent-jeb-c8="" class="button-group mt--20"><a _ngcontent-jeb-c8=""
+                        href="https://leitta.com/" target="_blank" class="rn-btn"><span _ngcontent-jeb-c8="">VIEW
+                          PROJECT</span><i _ngcontent-jeb-c8="" class="fa fa-arrow-right"></i></a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div _ngcontent-jeb-c8="" id="projectTwo" tabindex="-1" role="dialog" aria-hidden="true" class="modal fade">
+        <div _ngcontent-jeb-c8="" role="document" class="modal-dialog modal-dialog-centered">
+          <div _ngcontent-jeb-c8="" class="modal-content">
+            <div _ngcontent-jeb-c8="" class="modal-header"><button _ngcontent-jeb-c8="" type="button"
+                data-dismiss="modal" aria-label="Close" class="close"><span _ngcontent-jeb-c8="" aria-hidden="true"><i
+                    _ngcontent-jeb-c8="" class="fa fa-close"></i></span></button></div>
+            <div _ngcontent-jeb-c8="" class="modal-body">
+              <div _ngcontent-jeb-c8="" class="row align-items-center">
+                <div _ngcontent-jeb-c8="" class="col-lg-6">
+                  <div _ngcontent-jeb-c8="" class="portfolio-popup-thumbnail">
+                    <div _ngcontent-jeb-c8="" class="image"><img _ngcontent-jeb-c8=""
+                        src="./Maxwell Karanja - Full Stack Developer _ Portfolio_files/image2.png" alt="slide"
+                        class="w-100"></div>
+                  </div>
+                </div>
+                <div _ngcontent-jeb-c8="" class="col-lg-6">
+                  <div _ngcontent-jeb-c8="" class="text-content">
+                    <h3 _ngcontent-jeb-c8=""><span _ngcontent-jeb-c8="">Category - Design/Frontend/Backend</span> Web
+                      Development. </h3>
+                    <p _ngcontent-jeb-c8="" class="mb--30"> The business forum is a platform where you can manage a
+                      conference, or even meetup. Through this platform you can add members, manage the forum, post
+                      messages/news, and much more. Attendees can also meet with the members of the forum and discuss
+                      the topics within the system. </p>
+                    <p _ngcontent-jeb-c8=""></p>
+                    <div _ngcontent-jeb-c8="" class="button-group mt--20"><a _ngcontent-jeb-c8=""
+                        href="https://mvp.wezaprosoft.com/" target="_blank" class="rn-btn"><span
+                          _ngcontent-jeb-c8="">VIEW PROJECT</span><i _ngcontent-jeb-c8=""
+                          class="fa fa-arrow-right"></i></a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div _ngcontent-jeb-c8="" id="projectThree" tabindex="-1" role="dialog" aria-hidden="true" class="modal fade">
+        <div _ngcontent-jeb-c8="" role="document" class="modal-dialog modal-dialog-centered">
+          <div _ngcontent-jeb-c8="" class="modal-content">
+            <div _ngcontent-jeb-c8="" class="modal-header"><button _ngcontent-jeb-c8="" type="button"
+                data-dismiss="modal" aria-label="Close" class="close"><span _ngcontent-jeb-c8="" aria-hidden="true"><i
+                    _ngcontent-jeb-c8="" class="fa fa-close"></i></span></button></div>
+            <div _ngcontent-jeb-c8="" class="modal-body">
+              <div _ngcontent-jeb-c8="" class="row align-items-center">
+                <div _ngcontent-jeb-c8="" class="col-lg-6">
+                  <div _ngcontent-jeb-c8="" class="portfolio-popup-thumbnail">
+                    <div _ngcontent-jeb-c8="" class="image"><img _ngcontent-jeb-c8=""
+                        src="./Maxwell Karanja - Full Stack Developer _ Portfolio_files/image3.png" alt="slide"
+                        class="w-100"></div>
+                  </div>
+                </div>
+                <div _ngcontent-jeb-c8="" class="col-lg-6">
+                  <div _ngcontent-jeb-c8="" class="text-content">
+                    <h3 _ngcontent-jeb-c8=""><span _ngcontent-jeb-c8="">Category - Design/Frontend/Backend</span> Web
+                      Development. </h3>
+                    <p _ngcontent-jeb-c8="" class="mb--30"> Dalbit is a member of JCG Holdings Ltd. Established in 2002
+                      in Kenya, where they supply and distribute petroleum products and services across East, Central
+                      and Southern Africa. </p>
+                    <p _ngcontent-jeb-c8=""></p>
+                    <div _ngcontent-jeb-c8="" class="button-group mt--20"><a _ngcontent-jeb-c8=""
+                        href="https://www.dalbitpetroleum.com/" target="_blank" class="rn-btn"><span
+                          _ngcontent-jeb-c8="">VIEW PROJECT</span><i _ngcontent-jeb-c8=""
+                          class="fa fa-arrow-right"></i></a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div _ngcontent-jeb-c8="" id="projectFour" tabindex="-1" role="dialog" aria-hidden="true" class="modal fade">
+        <div _ngcontent-jeb-c8="" role="document" class="modal-dialog modal-dialog-centered">
+          <div _ngcontent-jeb-c8="" class="modal-content">
+            <div _ngcontent-jeb-c8="" class="modal-header"><button _ngcontent-jeb-c8="" type="button"
+                data-dismiss="modal" aria-label="Close" class="close"><span _ngcontent-jeb-c8="" aria-hidden="true"><i
+                    _ngcontent-jeb-c8="" class="fa fa-close"></i></span></button></div>
+            <div _ngcontent-jeb-c8="" class="modal-body">
+              <div _ngcontent-jeb-c8="" class="row align-items-center">
+                <div _ngcontent-jeb-c8="" class="col-lg-6">
+                  <div _ngcontent-jeb-c8="" class="portfolio-popup-thumbnail">
+                    <div _ngcontent-jeb-c8="" class="image"><img _ngcontent-jeb-c8=""
+                        src="./Maxwell Karanja - Full Stack Developer _ Portfolio_files/image4.png" alt="slide"
+                        class="w-100"></div>
+                  </div>
+                </div>
+                <div _ngcontent-jeb-c8="" class="col-lg-6">
+                  <div _ngcontent-jeb-c8="" class="text-content">
+                    <h3 _ngcontent-jeb-c8=""><span _ngcontent-jeb-c8="">Category - Design/Frontend/Backend</span> Web
+                      Development. </h3>
+                    <p _ngcontent-jeb-c8="" class="mb--30"> Dangote Industries Limited is a diversified and fully
+                      integrated conglomerate with an annual group turnover in excess of US$4 billion (2016) with
+                      vibrant operations in Nigeria and Africa across a wide range of sectors including cement, sugar,
+                      salt, condiments, packaging, energy, port operations, fertilizer, and petrochemicals. </p>
+                    <p _ngcontent-jeb-c8=""></p>
+                    <div _ngcontent-jeb-c8="" class="button-group mt--20"><a _ngcontent-jeb-c8=""
+                        href="https://ler-web.netlify.app/" target="_blank" class="rn-btn"><span
+                          _ngcontent-jeb-c8="">VIEW PROJECT</span><i _ngcontent-jeb-c8=""
+                          class="fa fa-arrow-right"></i></a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div _ngcontent-jeb-c8="" id="projectFive" tabindex="-1" role="dialog" aria-hidden="true" class="modal fade">
+        <div _ngcontent-jeb-c8="" role="document" class="modal-dialog modal-dialog-centered">
+          <div _ngcontent-jeb-c8="" class="modal-content">
+            <div _ngcontent-jeb-c8="" class="modal-header"><button _ngcontent-jeb-c8="" type="button"
+                data-dismiss="modal" aria-label="Close" class="close"><span _ngcontent-jeb-c8="" aria-hidden="true"><i
+                    _ngcontent-jeb-c8="" class="fa fa-close"></i></span></button></div>
+            <div _ngcontent-jeb-c8="" class="modal-body">
+              <div _ngcontent-jeb-c8="" class="row align-items-center">
+                <div _ngcontent-jeb-c8="" class="col-lg-6">
+                  <div _ngcontent-jeb-c8="" class="portfolio-popup-thumbnail">
+                    <div _ngcontent-jeb-c8="" class="image"><img _ngcontent-jeb-c8=""
+                        src="./Maxwell Karanja - Full Stack Developer _ Portfolio_files/direct.co.ke.jpeg" alt="slide"
+                        class="w-100"></div>
+                  </div>
+                </div>
+                <div _ngcontent-jeb-c8="" class="col-lg-6">
+                  <div _ngcontent-jeb-c8="" class="text-content">
+                    <h3 _ngcontent-jeb-c8=""><span _ngcontent-jeb-c8="">Category - Design/Frontend/Backend</span> Web
+                      Development. </h3>
+                    <p _ngcontent-jeb-c8="" class="mb--30"> This is a plaform where showrooms, dealers and manufacturers
+                      can post their cars and sell them. </p>
+                    <p _ngcontent-jeb-c8=""></p>
+                    <div _ngcontent-jeb-c8="" class="button-group mt--20"><a _ngcontent-jeb-c8=""
+                        href="https://direct.co.ke/admin" target="_blank" class="rn-btn"><span _ngcontent-jeb-c8="">VIEW
+                          PROJECT</span><i _ngcontent-jeb-c8="" class="fa fa-arrow-right"></i></a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div _ngcontent-jeb-c8="" id="projectSix" tabindex="-1" role="dialog" aria-hidden="true" class="modal fade">
+        <div _ngcontent-jeb-c8="" role="document" class="modal-dialog modal-dialog-centered">
+          <div _ngcontent-jeb-c8="" class="modal-content">
+            <div _ngcontent-jeb-c8="" class="modal-header"><button _ngcontent-jeb-c8="" type="button"
+                data-dismiss="modal" aria-label="Close" class="close"><span _ngcontent-jeb-c8="" aria-hidden="true"><i
+                    _ngcontent-jeb-c8="" class="fa fa-close"></i></span></button></div>
+            <div _ngcontent-jeb-c8="" class="modal-body">
+              <div _ngcontent-jeb-c8="" class="row align-items-center">
+                <div _ngcontent-jeb-c8="" class="col-lg-6">
+                  <div _ngcontent-jeb-c8="" class="portfolio-popup-thumbnail">
+                    <div _ngcontent-jeb-c8="" class="image"><img _ngcontent-jeb-c8=""
+                        src="./Maxwell Karanja - Full Stack Developer _ Portfolio_files/image6.png" alt="slide"
+                        class="w-100"></div>
+                  </div>
+                </div>
+                <div _ngcontent-jeb-c8="" class="col-lg-6">
+                  <div _ngcontent-jeb-c8="" class="text-content">
+                    <h3 _ngcontent-jeb-c8=""><span _ngcontent-jeb-c8="">Category - Design/Frontend</span> Web
+                      Development. </h3>
+                    <p _ngcontent-jeb-c8="" class="mb--30"> Church website that allows people to know about the church.
+                    </p>
+                    <p _ngcontent-jeb-c8=""></p>
+                    <div _ngcontent-jeb-c8="" class="button-group mt--20"><a _ngcontent-jeb-c8=""
+                        href="https://pagkenya.com/" target="_blank" class="rn-btn"><span _ngcontent-jeb-c8="">VIEW
+                          PROJECT</span><i _ngcontent-jeb-c8="" class="fa fa-arrow-right"></i></a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </app-projects><app-contact _ngcontent-jeb-c22="" _nghost-jeb-c20="">
+      <div _ngcontent-jeb-c20="" id="contacts" class="rn-contact-area rn-section-gap section-separator">
+        <div _ngcontent-jeb-c20="" class="container">
+          <div _ngcontent-jeb-c20="" class="row">
+            <div _ngcontent-jeb-c20="" class="col-lg-12">
+              <div _ngcontent-jeb-c20="" class="section-title text-center">
+                <h2 _ngcontent-jeb-c20="" class="title">Contact Me</h2>
+              </div>
+            </div>
+          </div>
+          <div _ngcontent-jeb-c20="" class="row mt--50 mt_md--40 mt_sm--40 mt-contact-sm">
+            <div _ngcontent-jeb-c20="" class="col-lg-5">
+              <div _ngcontent-jeb-c20="" class="contact-about-area">
+                <div _ngcontent-jeb-c20="" class="thumbnail"><img _ngcontent-jeb-c20=""
+                    src="./Maxwell Karanja - Full Stack Developer _ Portfolio_files/contact-me.svg" alt="contact-img">
+                </div>
+                <div _ngcontent-jeb-c20="" class="title-area">
+                  <h4 _ngcontent-jeb-c20="" class="title">Maxwell Karanja </h4><span _ngcontent-jeb-c20="">Full Stack
+                    Developer</span>
+                </div>
+                <div _ngcontent-jeb-c20="" class="description">
+                  <p _ngcontent-jeb-c20="">I am available for freelance work. Connect with me via email or through a
+                    phone call. </p><span _ngcontent-jeb-c20="" class="phone">Phone: <a _ngcontent-jeb-c20=""
+                      href="tel:+254717255460">+254717255460</a></span><span _ngcontent-jeb-c20="" class="mail">Email:
+                    <a _ngcontent-jeb-c20="" href="mailto:mxkaranja@gmail.com">mxkaranja@gmail.com</a></span>
+                </div>
+                <div _ngcontent-jeb-c20="" class="social-area">
+                  <div _ngcontent-jeb-c20="" class="name">FIND WITH ME</div>
+                  <div _ngcontent-jeb-c20="" class="social-icone"><a _ngcontent-jeb-c20=""
+                      href="https://github.com/MaxwellKaranja" target="_blank"><i _ngcontent-jeb-c20=""
+                        class="fa fa-github"></i></a><a _ngcontent-jeb-c20="" target="_blank"
+                      href="https://www.linkedin.com/in/MaxwellKaranja/"><i _ngcontent-jeb-c20=""
+                        class="fa fa-linkedin"></i></a><a _ngcontent-jeb-c20=""
+                      href="malto:MaxwellKaranjam@gmail.com"><i _ngcontent-jeb-c20="" class="fa fa-google"></i></a><a
+                      _ngcontent-jeb-c20="" target="_blank" href="https://twitter.com/Maxwellk"><i _ngcontent-jeb-c20=""
+                        class="fa fa-twitter"></i></a></div>
+                </div>
+              </div>
+            </div>
+            <div _ngcontent-jeb-c20="" data-aos-delay="600" class="col-lg-7 contact-input">
+              <div _ngcontent-jeb-c20="" class="contact-form-wrapper">
+                <div _ngcontent-jeb-c20="" class="introduce">
+                  <form _ngcontent-jeb-c20="" novalidate=""
+                    class="rnt-contact-form rwt-dynamic-form row ng-untouched ng-pristine ng-invalid">
+                    <div _ngcontent-jeb-c20="" class="col-md-12"><!----></div>
+                    <div _ngcontent-jeb-c20="" class="col-md-12"><!----></div>
+                    <div _ngcontent-jeb-c20="" class="col-lg-6">
+                      <div _ngcontent-jeb-c20="" class="form-group"><label _ngcontent-jeb-c20="" for="contact-name">Your
+                          Name</label><input _ngcontent-jeb-c20="" name="name" id="contact-name" type="text" ngmodel=""
+                          required="" class="form-control form-control-lg ng-untouched ng-pristine ng-invalid"></div>
+                    </div>
+                    <div _ngcontent-jeb-c20="" class="col-lg-6">
+                      <div _ngcontent-jeb-c20="" class="form-group"><label _ngcontent-jeb-c20=""
+                          for="contact-phone">Phone Number</label><input _ngcontent-jeb-c20="" name="phone" id="phone"
+                          type="text" ngmodel="" class="form-control ng-untouched ng-pristine ng-valid"></div>
+                    </div>
+                    <div _ngcontent-jeb-c20="" class="col-lg-12">
+                      <div _ngcontent-jeb-c20="" class="form-group"><label _ngcontent-jeb-c20=""
+                          for="contact-email">Email</label><input _ngcontent-jeb-c20="" id="email" name="email"
+                          type="email" ngmodel="" required=""
+                          class="form-control form-control-sm ng-untouched ng-pristine ng-invalid"></div>
+                    </div>
+                    <div _ngcontent-jeb-c20="" class="col-lg-12">
+                      <div _ngcontent-jeb-c20="" class="form-group"><label _ngcontent-jeb-c20=""
+                          for="subject">subject</label><input _ngcontent-jeb-c20="" id="subject" name="subject"
+                          type="text" ngmodel="" required=""
+                          class="form-control form-control-sm ng-untouched ng-pristine ng-invalid"></div>
+                    </div>
+                    <div _ngcontent-jeb-c20="" class="col-lg-12">
+                      <div _ngcontent-jeb-c20="" class="form-group"><label _ngcontent-jeb-c20=""
+                          for="contact-message">Your Message</label><textarea _ngcontent-jeb-c20="" name="message"
+                          id="contact-message" cols="30" rows="10" ngmodel="" required=""
+                          class="ng-untouched ng-pristine ng-invalid"></textarea></div>
+                    </div>
+                    <div _ngcontent-jeb-c20="" class="col-lg-12"><button _ngcontent-jeb-c20="" type="submit" id="submit"
+                        class="rn-btn"><span _ngcontent-jeb-c20="">SEND MESSAGE</span><i _ngcontent-jeb-c20=""
+                          class="fa fa-arrow-right"></i></button></div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </app-contact><app-footer _ngcontent-jeb-c22="" _nghost-jeb-c21="">
+      <div _ngcontent-jeb-c21="" class="section-separator">
+        <div _ngcontent-jeb-c21="" class="container">
+          <div _ngcontent-jeb-c21="" class="row">
+            <div _ngcontent-jeb-c21="" class="col-lg-12">
+              <div _ngcontent-jeb-c21="" class="footer-area text-center p-3">
+                <p _ngcontent-jeb-c21="" class="description mt--30">© 2024. All rights reserved by <a
+                    _ngcontent-jeb-c21="" href="https://MaxwellKaranja.vercel.app/">Dev Maxwell</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </app-footer>
+    <div _ngcontent-jeb-c22="" class="backto-top">
+      <div _ngcontent-jeb-c22=""><i _ngcontent-jeb-c22="" class="fa fa-arrow-up"></i></div>
+    </div>
+  </main>
 
 
 
+  <script src="./Maxwell Karanja - Full Stack Developer _ Portfolio_files/runtime.1768b5f3da4b287bb54d.js.download"
+    defer=""></script>
+  <script src="./Maxwell Karanja - Full Stack Developer _ Portfolio_files/polyfills.1bc6c04334815dddf307.js.download"
+    defer=""></script>
+  <script src="./Maxwell Karanja - Full Stack Developer _ Portfolio_files/scripts.a25c5a3d21d609b53def.js.download"
+    defer=""></script>
+  <script src="./Maxwell Karanja - Full Stack Developer _ Portfolio_files/main.8ab4d08d6b695b28b85f.js.download"
+    defer=""></script>
 
 
-
-
-
-
-<body>
-<div class="header" id="head">	
-      <div class="container"> 
-         <div class="header-top wrapper">
-      		 <div class="logo">
-				<a href="index.html"><img src="images/logo.png" alt=""/></a>
-			 </div>
-		   <div class="top-menu tmsb">
-		   	<span class="menu"> </span>
-			<ul>
-			 	<nav class="cl-effect-5">
-					<li><a class="active" href="index.html"><span data-hover="Home">home</span></a></li>
-					<li><a href="#about" class="scroll"><span data-hover="about">about</span></a></li>
-					<li><a href="#work" class="scroll"><span data-hover="work"><span>work</span></a></li>
-					<li><a href="#services" class="scroll"><span data-hover="services">services</span></a></li>
-					<li><a href="#contact" class="scroll"><span data-hover="contact">contact</span></a></li>
-				</nav>
-			 </ul>
-			 </div>
-
-			 <div id="sidebar">       
-                <div id="menu">
-                    <!-- <i class="fas fa-close" onclick="hideMenu()"></i> -->
-                    <i class="fas fa-bars" onclick="showMenu()"></i>
-              	</div>
-
-			 <!--script-nav-->
-			<script>
-				$("span.menu").click(function(){
-				$(".top-menu ul").slideToggle("slow" , function(){});
-				});
-			</script>
-			<div class="clearfix"></div>
-		 </div>  
-
-		<main>
-				<div class="index-banner">
-				<div class="wmuSlider example1">
-					<div class="wmuSliderWrapper">
-						<article style="position: absolute; width: 100%; opacity: 0;"> 
-							<div class="banner-wrap">
-									<div class="banner_center">
-										<h2>Hello Guest👋</h2> 
-										<br>
-										<h1>i am <span><big>Maxwell Karanja</big></span></h1>
-										</div>
-								</div>
-							</article>
-						<article style="position: relative; width: 100%; opacity: 1;"> 
-								<div class="banner-wrap">
-								<div class="banner_center">
-										<h2><big>IT</big>  is my profession</h2> 
-										<h2>&</h2> 
-										<h1>I am a <span>Software Engineer</span> & <span>Web Developer</span></h1>
-										<h2></h2>
-										</div>
-								</div>
-						</article>
-						<article style="position: absolute; width: 100%; opacity: 0;">
-								<div class="banner-wrap">
-								<div class="banner_center">
-										<h2>Looking Forward to working</h2> 
-										<h1>and Create seamless digital experience with <span><big>You</big></span>.</h1>
-										</div>
-								</div>
-							</article>
-							
-						</div>
-						
-					</div>
-					<script src="{% static 'js/jquery.wmuSlider.js' %}"></script> 
-					<script>$('.example1').wmuSlider();</script> 	           	      
-			</div>
-			</div>     
-			</div>
-
-
-
-			<div class="content">
-				<div class="about-section" id="about" id="about">
-			<div class="container">
-				<div class="about-header">
-					<h3>about</h3>
-					<div class="about-imag">
-						<img src="images/logo.png" alt=""/>
-					</div>
-					<div class="about-text">
-							<p>Maxwell is a passionate, dedicated, certified and solution driven Full-stack Software Engineer, Web Developer.</p>	
-							<p>An Innovative IT career-oriented person. Experienced in leveraging frontend and backend technologies to build and deploy custom appealing website applications. </p>
-					</div>
-					<div class="clearfix"></div>
-				</div>
-
-
-					<div class="about-sectiongrids">
-						<h3 style="margin-top: 20%; margin-bottom: 5%; color: antiquewhite;"><center>Skills Set</center></h3>
-
-
-						<div class="col-md-6 about-leftgrid">
-							<div class="polls">
-								<div class="poll">
-									<div class="poll-desc">
-										<h4>Python Django</h4>
-									</div>
-									<div class="percentage">
-										<p>85%</p>
-									</div>
-									<div class="clearfix"></div>
-								</div>
-								<div class="skills">
-									<div style="width:85%"> </div>
-								</div>
-								<div class="poll">
-									<div class="poll-desc">
-										<h4>MySQL Database</h4>
-									</div>
-									<div class="percentage">
-										<p>80%</p>
-									</div>
-									<div class="clearfix"></div>
-								</div>
-								<div class="skills">
-									<div style="width:80%"> </div>
-								</div>
-							</div>
-							<div class="polls">
-								<div class="poll">
-									<div class="poll-desc">
-										<h4>Html</h4>
-									</div>
-									<div class="percentage">
-										<p>70%</p>
-									</div>
-									<div class="clearfix"></div>
-								</div>
-								<div class="skills">
-									<div style="width:70%"> </div>
-								</div>
-							</div>
-							<div class="polls">
-								<div class="poll">
-									<div class="poll-desc">
-										<h4>CSS</h4>
-									</div>
-									<div class="percentage">
-										<p>70%</p>
-									</div>
-									<div class="clearfix"></div>
-								</div>
-								<div class="skills">
-									<div style="width:65%"> </div>
-								</div>
-							</div>
-							<div class="polls">
-								<div class="poll">
-									<div class="poll-desc">
-										<h4>JavaScript</h4>
-									</div>
-									<div class="percentage">
-										<p>60%</p>
-									</div>
-									<div class="clearfix"></div>
-								</div>
-								<div class="skills">
-									<div style="width:60%"> </div>
-								</div>
-							</div>
-							<div class="polls">
-								<div class="poll">
-									<div class="poll-desc">
-										<h4>React JS</h4>
-									</div>
-									<div class="percentage">
-										<p>30%</p>
-									</div>
-									<div class="clearfix"></div>
-								</div>
-								<div class="skills">
-									<div style="width:30%"> </div>
-								</div>
-							</div>
-							<div class="polls">
-								<div class="poll">
-									<div class="poll-desc">
-										<h4>Python</h4>
-									</div>
-									<div class="percentage">
-										<p>70%</p>
-									</div>
-									<div class="clearfix"></div>
-								</div>
-								<div class="skills">
-									<div style="width:70%"> </div>
-								</div>
-							</div>
-							<br><br>
-							<div class="polls">
-								<div class="poll">
-									<div class="poll-desc">
-										<h4>Transcription</h4>
-									</div>
-									<div class="percentage">
-										<p>Above average</p>
-									</div>
-									<div class="clearfix"></div>
-								</div>
-								<div class="skills">
-									<div style="width:70%"> </div>
-								</div>
-							</div>
-							<div class="polls">
-								<div class="poll">
-									<div class="poll-desc">
-										<h4>Data Entry & Microsoft Office</h4>
-									</div>
-									<div class="percentage">
-										<p>Above average</p>
-									</div>
-									<div class="clearfix"></div>
-								</div>
-								<div class="skills">
-									<div style="width:70%"> </div>
-								</div>
-							</div>
-						</div>
-					
-					<div class="col-md-6 about-rightgrid">
-						<div class="certs">
-							<a href="assets/data/CV_MAXWELL-KARANJA.pdf" download="CV_MAXWELL-KARANJA.pdf" target="_blank">
-								<button type="button" class="button" onclick="openPopup()">Resume</button>
-								<i class="fas fa-download"></i>
-							</a>
-							<a href="assets/data/WEB_DESIGN_CERTIFICATE-MAXWELL_KARANJA.pdf" download="WEB_DESIGN_CERTIFICATE-MAXWELL_KARANJA.pdf" target="_blank">
-								<button type="button" class="button" onclick="openPopup()">Web Design</button>
-							</a>
-							<a href="assets/data/DIGITAL_MARKETING_GOOGLE-MAXWELL_KARANJA.pdf" download="DIGITAL_MARKETING_GOOGLE-MAXWELL_KARANJA" target="_blank">
-								<button type="button" class="button">Digital Marketing</button>
-								<i class="fas fa-download"></i>
-							</a>
-						</div>
-					</div>
-					<div class="clearfix"></div>
-			</div>
-			<div class="arrow1">
-				<a href="#work" class="scroll"><i class="fas fa-arrow-alt-circle-down" aria-hidden="true" style="color: yellow; font-size: 22px;"></i></a>
-
-				
-			</div>
-			</div>
-			</div>
-			<!-- about-section-ends -->
-			<div class="works-section" id="work" id="work">
-			<div class="works-header">
-					<h3>Projects</h3>
-						<p></p>
-				</div>
-				<div class="portfolio-section-bottom-row" id="portfolio">
-					<div class="container">
-						
-								<script src="{% static 'js/easyResponsiveTabs.js' %}" type="text/javascript"></script>
-							<script type="text/javascript">
-								$(document).ready(function () {
-									$('#horizontalTab').easyResponsiveTabs({
-										type: 'default', //Types: default, vertical, accordion           
-										width: 'auto', //auto or any width like 600px
-										fit: true   // 100% fit in a container
-									});
-								});
-								
-							</script>
-								<link rel="stylesheet" href="css/swipebox.css">
-									<script src="{% static 'js/jquery.swipebox.min.js' %}"></script> 
-										<script type="text/javascript">
-											jQuery(function($) {
-												$(".swipebox").swipebox();
-											});
-										</script>
-									<!-- Portfolio Ends Here -->
-								<div class="sap_tabs">
-									<div id="horizontalTab" style="display: block; width: 100%; margin: 0px;">
-										<ul class="resp-tabs-list">
-											<li class="resp-tab-item" aria-controls="tab_item-0" role="tab"><span>All</span></li>
-											<li class="resp-tab-item" aria-controls="tab_item-1" role="tab"><span>Github</span></li>
-											<li class="resp-tab-item" aria-controls="tab_item-2" role="tab"><span>Live Websites</span></li>
-											<div class="clearfix"></div>
-										</ul>	
-										<div id="portfoliolist">
-											<div class="resp-tabs-container">
-												<div class="tab-1 resp-tab-content" aria-labelledby="tab_item-0">
-													<div class="tab_img">
-															<div class="col-md-3 img-top grid_box">
-																<a href="images\portfolio.jpg" class="swipebox"  title="Image Title">
-																	<img src="images\portfolio.jpg" class="img-responsive" alt="">
-																	<span class="zoom-icon"></span> 
-																</a>
-															</div>
-															<div class="col-md-3 img-top grid_box">
-																<a href="images\beachapp.jpg" class="swipebox"  title="Image Title">
-																	<img src="images\beachapp.jpg" class="img-responsive" alt="">
-																	<span class="zoom-icon"></span> 
-																</a>
-															</div>
-															<div class="col-md-3 img-top grid_box">
-																<a href="images\yt-converter.jpg" class="swipebox"  title="Image Title">
-																	<img src="images\yt-converter.jpg" class="img-responsive" alt="">
-																	<span class="zoom-icon"></span> 
-																</a>
-															</div>
-															<div class="col-md-3 img-top grid_box">
-																<a href="images\weatherapp.jpg" class="swipebox"  title="Image Title">
-																	<img src="images\weatherapp.jpg" class="img-responsive" alt="">
-																	<span class="zoom-icon"></span> 
-																</a>
-															</div>
-															<div class="col-md-3 img-top grid_box">
-																<a href="images\socialnetwork app.jpg" class="swipebox"  title="Image Title">
-																	<img src="images\socialnetwork app.jpg" class="img-responsive" alt="">
-																	<span class="zoom-icon"></span> 
-																</a>
-															</div>
-															<div class="col-md-3 img-top grid_box">
-																<a href="images\M-khan_softwebs_logo.jfif" class="swipebox"  title="Image Title">
-																	<img src="images\M-khan_softwebs_logo.jfif" class="img-responsive" alt="">
-																	<span class="zoom-icon"></span> 
-																</a>
-															</div>
-															<div class="col-md-3 img-top grid_box">
-																<a href="images\blog_app.jpg" class="swipebox"  title="Image Title">
-																	<img src="images\blog_app.jpg" class="img-responsive" alt="">
-																	<span class="zoom-icon"></span> 
-																</a>
-															</div>
-															<div class="clearfix"></div>	
-													</div>
-																						
-												</div>
-
-
-												<div class="tab-1 resp-tab-content" aria-labelledby="tab_item-1">
-													<div class="tab_img">
-														<div class="col-md-3 img-top grid_box">
-															<a href="images\portfolio.jpg" class="swipebox"  title="Image Title">
-																<img src="images\portfolio.jpg" class="img-responsive" alt="">
-																<span class="zoom-icon"></span> 
-															</a>
-														</div>
-														<div class="col-md-3 img-top grid_box">
-															<a href="images\beachapp.jpg" class="swipebox"  title="Image Title">
-																<img src="images\beachapp.jpg" class="img-responsive" alt="">
-																<span class="zoom-icon"></span> 
-															</a>
-														</div>
-														<div class="col-md-3 img-top grid_box">
-															<a href="images\yt-converter.jpg" class="swipebox"  title="Image Title">
-																<img src="images\yt-converter.jpg" class="img-responsive" alt="">
-																<span class="zoom-icon"></span> 
-															</a>
-														</div>
-														<div class="col-md-3 img-top grid_box">
-															<a href="images\weatherapp.jpg" class="swipebox"  title="Image Title">
-																<img src="images\weatherapp.jpg" class="img-responsive" alt="">
-																<span class="zoom-icon"></span> 
-															</a>
-														</div>
-														<div class="col-md-3 img-top grid_box">
-															<a href="images\socialnetwork app.jpg" class="swipebox"  title="Image Title">
-																<img src="images\socialnetwork app.jpg" class="img-responsive" alt="">
-																<span class="zoom-icon"></span> 
-															</a>
-														</div>
-															
-															<div class="clearfix"></div>	
-													</div>	 	        					 
-												</div>
-
-
-												<div class="tab-1 resp-tab-content" aria-labelledby="tab_item-2">
-													
-													<div class="tab_img">
-														<div class="col-md-3 img-top grid_box">
-															<a href="images\M-khan_softwebs_logo.jfif" class="swipebox"  title="Image Title">
-																<img src="images\M-khan_softwebs_logo.jfif" class="img-responsive" alt="">
-																<span class="zoom-icon"></span> 
-															</a>
-														</div>
-														<div class="col-md-3 img-top grid_box">
-															<a href="images\blog_app.jpg" class="swipebox"  title="Image Title">
-																<img src="images\blog_app.jpg" class="img-responsive" alt="">
-																<span class="zoom-icon"></span> 
-															</a>
-														</div>
-															
-																<div class="clearfix"></div>
-													</div>		        					 
-												</div>
-
-
-												<div class="tab-1 resp-tab-content" aria-labelledby="tab_item-3">
-													<div class="tab_img">
-															<div class="col-md-3 img-top grid_box">
-																<a href="images/pic-1.jpg" class="swipebox"  title="Image Title">
-																	<img src="images/pic-1.jpg" class="img-responsive" alt="">
-																	<span class="zoom-icon"></span> 
-																</a>
-															</div>
-															<div class="col-md-3 img-top grid_box">
-																<a href="images/pic-2.jpg" class="swipebox"  title="Image Title">
-																	<img src="images/pic-2.jpg" class="img-responsive" alt="">
-																	<span class="zoom-icon"></span> 
-																</a>
-															</div>
-															
-																<div class="clearfix"></div>
-													</div>	
-												</div>
-												<div class="tab-1 resp-tab-content" aria-labelledby="tab_item-4">
-													<div class="tab_img">
-															<div class="col-md-3 img-top grid_box">
-																<a href="images/pic-1.jpg" class="swipebox"  title="Image Title">
-																	<img src="images/pic-1.jpg" class="img-responsive" alt="">
-																	<span class="zoom-icon"></span> 
-																</a>
-															</div>
-															
-																<div class="clearfix"></div>
-													</div>	
-												</div>										
-											</div>	
-										</div>
-									</div>
-								</div>				
-		
-						<div class="arrow">
-							<a href="#services" class="scroll"><img src="images/arrow.png" alt=""/></a>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- portfolio-section-ends -->
-			<div class="services-section" id="services">
-					<div class="container"> 
-					<div class="services-header">
-						<h3>Services that I Offer:</h3>
-							<p>I am proficient in IT task that revolve around Web Development. I also offer transcription and data entry services.</p>
-					</div>
-					<div class="services-sectiongrids">
-						<div class="col-md-4 services-grid">
-							<i class="fas fa-code"></i>
-							<h4>Web Design & Development</h4>
-							<p>I design and I develop user friendly and fully functional websites and link them to a database for full user experience.</p>
-						</div>
-						<div class="col-md-4 services-grid">
-							<i class="fas fa-clone"></i>
-							<h4>Web Cloning</h4>
-							<p>Do you need a expert in developing exact replicas or lookalike for other websites? Then you have come to the right place.</p>
-						</div>
-						<div class="col-md-4 services-grid">
-							<i class="fas fa-comments"></i>
-							<h4>Web Consultancy</h4>
-							<p>With 3 years experience in the field, from backend web administration, database administration and hosting services. I will give insights of which technologies to use that matches client need. </p>
-						</div>
-						<div class="col-md-4 services-grid">
-							<i class="fas fa-austral-sign"></i>
-							<h4>APIs Development</h4>
-							<p>Application Programming Interface. I offer Digital Payment Intergrations APIs development and checkouts for websites such as e-Commerce websites. </p>
-						</div>
-						<div class="col-md-4 services-grid">
-							<i class="fas fa-file-audio"></i>
-							<h4>Transcription</h4>
-							<p>I will transcribe an English audio or video to text with utmost professionalism. I will also transcribe and translate an English video or audio to Kiswahili text and vice versa.</p>
-						</div>
-						<div class="col-md-4 services-grid">
-							<i class="fas fa-computer"></i>
-							<h4>Data Entry and Officework</h4>
-							<p>You might need help arranging your work documents or data. I can help you get started right away.</p>
-						</div>
-						
-						<div class="clearfix"></div>
-						<div class="arrow1">
-							<a href="#contact" class="scroll"><img src="images/arrow1.png" alt=""/></a>
-							</div>
-				</div>
-				</div>
-				</div>
-				<!-- services-section-ends -->
-			</div>
-			<div class="footer-section" id="contact" id="contact">
-					<div class="container"> 
-					<div class="contact-header">
-						<h3> contact</h3>
-							<p>Don't be shy! <br>If you have a project in mind <big>OR</big> would like: Booking me  OR Get a quote for a project OR Just like to say hello</p>
-							
-							<p>I am a very friendly person. Simply get in touch via my social media handles below <i class="fas fa-hand-point-down"></i> </p>	  
-								
-					</div>
-		</main>
-
-			<div class="social-tray">
-				<center>
-					<a href="https://www.facebook.com/dev.maxwell.k"><i class="fab fa-facebook" style="font-size: 50px; background-color: rgb(32, 80, 184); border-radius: 50%; color: #fff; margin: 12px;"></i></a>
-					<a href="https://twitter.com/dev_Max_Well"><i class="fab fa-twitter" style="font-size: 50px; color: rgb(37, 150, 226); border-radius: 50%; background-color: #fff; margin: 12px;"></i></a>
-					<a href="https://www.linkedin.com/in/dev-maxwell-karanja-715986252"><i class="fab fa-linkedin" style="font-size: 50px; background-color: rgb(32, 80, 184); border-radius: 50%; color: #fff; margin: 12px;"></i></a>
-					<a href="https://wa.link/uoxqvk"><i class="fab fa-whatsapp" style="font-size: 50px; background-color: rgb(26, 179, 12); border-radius: 50%; color: #fff; margin: 12px;"></i></a>
-				</center>
-			</div>
-			<br><br><br>
-
-			<div class="em-ph">
-				<p>Email <i class="fas fa-envelope"></i> or text Me via <i class="fas fa-sms"></i>:</p>
-				<br>
-				<div class="em-ph-det">
-						<a href="mailto:devmaxwellkaranja@gmail.com">
-							<button type="button" class="button">devmaxwellkaranja@gmail.com</button>
-						</a>
-						<a href="SMS:+254 715 063 221">
-							<button type="button" class="button">+254 715 063 221</button>
-						</a>
-				</div>	
-			</div>
-
-			<br><br><br><br><br><br>
-
-			<div class="contact">
-				
-				<form method="POST">
-					{% csrf_token %}
-					<div class="col-md-4 contactgrid">
-						<input required="" type="text" class="text" value="name" name="name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = ' name';}">
-					</div>
-					<div class="col-md-4 contactgrid">
-						<input required="" type="text" class="text" value="email" name="email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'email';}">
-					</div>
-					<div class="col-md-4 contactgrid">
-						<input required="" type="text" class="text" value="phone" name="phone" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'phone';}">
-					</div>
-					<div class="col-md-8 contactgrid1">
-						<textarea required="" onfocus="if(this.value == 'Your Message') this.value='';" onblur="if(this.value == '') this.value='Your Message';" name="message">Your Message</textarea>
-					</div>
-					<div class="col-md-4 contactgrid2">
-						<input type="submit" value="[send message]">
-					</div>
-				   <div class="clearfix"></div>
-				</form>
-			</div>
-			<div class="footer-bottom">
-
-					<p>&copy; 2024 All rights  Reserved<a href="#" target="target_blank">Dev Maxwell</a></p>
-
-					</div>
-					<script type="text/javascript">
-						$(document).ready(function() {
-							/*
-							var defaults = {
-					  			containerID: 'toTop', // fading element id
-								containerHoverID: 'toTopHover', // fading element hover id
-								scrollSpeed: 1200,
-								easingType: 'linear' 
-					 		};
-							*/
-							
-							$().UItoTop({ easingType: 'easeOutQuart' });
-							
-						});
-					</script>
-				<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
-</div>
-
-		</div>		
-	</div>
-	
 </body>
+
 </html>
