@@ -3,6 +3,7 @@ from .models import emailingInfo
 from django.core.mail import send_mail
 from django.conf import settings
 from django.http import HttpResponse
+from chat import *
 
 def home(request):
     #sending mail
@@ -31,11 +32,9 @@ def home(request):
 
     return render(request, 'index.html')
 
+def chatWithMe(request):
+    context = {  
+               "input": input,   
+    }
+    return render(request, 'chat.html', context)
 
-def sitemap(request):
-    sitemap_content = (
-        "<sitemap> <loc>https://www.maxwellkaranja.me</loc>"
-        "<lastmod>2024-01-14 T15:00:44Z</lastmod>"
-        "</sitemap>"
-    )
-    return HttpResponse(f"<pre>{sitemap_content}</pre>")
