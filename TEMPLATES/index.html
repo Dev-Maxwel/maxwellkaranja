@@ -18,31 +18,32 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://maxwellkaranja.me/">
   <meta property="og:title" content=" Maxwell Karanja |  Full Stack Developer ">
-  <meta property="og:description"
-    content=" Experienced Full Stack Developer with a demonstrated history of working in the internet industry. Building Web applications with Angular, PHP, Laravel, Python, Django, Flask, MySQL/Postgres and some other cool libraries and frameworks.">
-  <meta property="og:image" content="assets/images/favicon.ico">
+  <meta property="og:description" content=" Experienced Full Stack Developer with a demonstrated history of working in the internet industry. Building Web applications with Angular, PHP, Laravel, Python, Django, Flask, MySQL/Postgres and some other cool libraries and frameworks.">
+  <meta property="og:image" content="{% static 'images\icon.png' %}">
+
+  <link rel="icon" href="assets\images\icon.png" sizes="32x32">
+<link rel="icon" href="assets\images\icon.png" sizes="192x192">
+<link rel="apple-touch-icon" href="assets\images\icon.png">
 
   <meta property="twitter:card" content="summary_large_image">
   <meta property="twitter:url" content="https://developerMaxwell.com/">
   <meta property="twitter:title" content=" Maxwell Karanja |  Full Stack Developer ">
   <meta property="twitter:description"
     content=" Experienced Full Stack Developer with a demonstrated history of working in the internet industry. Building Web applications with Angular, PHP, Laravel, Python, Django, Flask, MySQL/Postgres and some other cool libraries and frameworks.">
-  <meta property="twitter:image" content="assets/images/favicon.ico ">
+  <meta property="twitter:image" content="{% static 'images\profilepicture.jpeg' %}">
 
 
   <!-- Favicon -->
-  <link rel="shortcut icon" type="image/x-icon" href="https://MaxwellKaranja.vercel.app/assets/images/favicon.ico">
-  <!--<base href="/">-->
-  <base href=".">
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async="" src="./Maxwell Karanja - Full Stack Developer _ Portfolio_files/js"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
+  <link rel="shortcut icon" type="image/x-icon" href="{% static 'images\icon.png' %}">
+  <link rel="icon" href="{% static 'images\icon.png' %}" sizes="32x32">
+  <link rel="icon" href="{% static 'images\icon.png' %}" sizes="192x192">
+  <link rel="apple-touch-icon" href="{% static 'images\icon.png' %}">
 
-    gtag('config', 'G-DTLCESP7FD');
-  </script>
+  <link rel="stylesheet" href="{% static 'fontawesome-free-6.2.0-web\css\all.css' %}">
+
+
+  <script async="" src="{% static 'js/js' %}"></script>
+
   <style>
     @import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&amp;display=swap);
     @import url(https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&amp;display=swap);
@@ -279,7 +280,7 @@
           </nav>
           <div _ngcontent-jeb-c3="" class="header-right mr-2">
             <div _ngcontent-jeb-c3="" class="hamberger-menu d-block d-xl-none"><i _ngcontent-jeb-c3="" id="menuBtn"
-                class="feather-menu humberger-menu"></i></div>
+                class="fas humberger-menu fas fa-bars"></i></div>
             <div _ngcontent-jeb-c3="" class="close-menu d-block"><span _ngcontent-jeb-c3="" class="closeTrigger"><i
                   _ngcontent-jeb-c3="" data-feather="x"></i></span></div>
           </div>
@@ -373,7 +374,7 @@
                               href="https://www.linkedin.com/in/MaxwellKaranja/"><i _ngcontent-jeb-c4=""
                                 class="fa fa-linkedin"></i></a></li>
                           <li _ngcontent-jeb-c4="" class="linkedin"><a _ngcontent-jeb-c4=""
-                              href="malto:mxkaranja@gmail.com"><i _ngcontent-jeb-c4="" class="fa fa-google"></i></a>
+                              href="malto:mxkaranja@gmail.com"><i _ngcontent-jeb-c4="" class="fa fa-envelope"></i></a>
                           </li>
                           <li _ngcontent-jeb-c4="" class="linkedin"><a _ngcontent-jeb-c4="" target="_blank"
                               href="https://twitter.com/Maxwellk"><i _ngcontent-jeb-c4="" class="fa fa-twitter"></i></a>
@@ -1062,7 +1063,7 @@
             <div _ngcontent-jeb-c20="" class="col-lg-5">
               <div _ngcontent-jeb-c20="" class="contact-about-area">
                 <div _ngcontent-jeb-c20="" class="thumbnail"><img _ngcontent-jeb-c20=""
-                    src="./Maxwell Karanja - Full Stack Developer _ Portfolio_files/contact-me.svg" alt="contact-img">
+                    src="{% static 'images\contact-me.svg' %}" alt="contact-img">
                 </div>
                 <div _ngcontent-jeb-c20="" class="title-area">
                   <h4 _ngcontent-jeb-c20="" class="title">Maxwell Karanja </h4><span _ngcontent-jeb-c20="">Full Stack
@@ -1153,13 +1154,13 @@
 
 
 
-  <script src="./Maxwell Karanja - Full Stack Developer _ Portfolio_files/runtime.1768b5f3da4b287bb54d.js.download"
+  <script src="{% static 'js\runtime.1768b5f3da4b287bb54d.js.download' %}"
     defer=""></script>
-  <script src="./Maxwell Karanja - Full Stack Developer _ Portfolio_files/polyfills.1bc6c04334815dddf307.js.download"
+  <script src="{% static 'polyfills.1bc6c04334815dddf307.js.download' %}"
     defer=""></script>
-  <script src="./Maxwell Karanja - Full Stack Developer _ Portfolio_files/scripts.a25c5a3d21d609b53def.js.download"
+  <script src="{% static 'scripts.a25c5a3d21d609b53def.js.download' %}"
     defer=""></script>
-  <script src="./Maxwell Karanja - Full Stack Developer _ Portfolio_files/main.8ab4d08d6b695b28b85f.js.download"
+  <script src="{% static 'main.8ab4d08d6b695b28b85f.js.download' %}"
     defer=""></script>
 
 
