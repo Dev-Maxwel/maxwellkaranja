@@ -29,7 +29,6 @@ def home(request):
         return render(request, 'index.html')
     else:
         pass
-
     return render(request, 'index.html')
 
 def chatWithMe(request):
@@ -37,4 +36,7 @@ def chatWithMe(request):
                "input": input,   
     }
     return render(request, 'chat.html', context)
+
+def projects(request):
+    return render(request, 'projects.html')
 
