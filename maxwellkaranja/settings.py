@@ -161,3 +161,5 @@ EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 EMAIL_HOST_USER = config("EADDRESS")
 EMAIL_HOST_PASSWORD = config("EPASSWORD")
+
+#amazon s3 bucket config
