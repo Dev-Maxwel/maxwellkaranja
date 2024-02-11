@@ -8,11 +8,10 @@ from chat import *
 def home(request):
     #sending mail
     if request.method == 'POST':
-        name = request.POST.get("name")
-        phone = request.POST.get("phone")
-        message = request.POST.get("subject")
-        message = request.POST.get("message")
-        email = request.POST.get("email")
+        name = request.POST.get("name").decode('utf-8')
+        phone = request.POST.get("phone").decode('utf-8')
+        message = request.POST.get("message").decode('utf-8')
+        email = request.POST.get("email").decode('utf-8')
         
         #send_mail function parameters
         send_mail(
