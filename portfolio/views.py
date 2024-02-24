@@ -30,14 +30,23 @@ def home(request):
         pass
     return render(request, 'index.html')
 
-def chatWithMe(request):
-    output = chatWithMe
-    context = {  
-               "input": input,   
-    }
-    render_chat = ['output', 'input']
-    return render(request, 'chat.html', context)
-
+def chat(request):  
+    if request.method == 'POST':
+        user_input = request.POST.get("user_input").decode('utf-8')
+        # Process user input and generate response
+        response = generate_response(user_input)
+        # Save the chat conversation to the database
+        chat_entry = ChatEntry(user_input=user_input, response=response)
+        chat_entry.save()
+        # Pass the response to the frontend
+        context = {
+            "user_input": user_input,
+            "response": response
+        }
+        return render(request, 'chat.html', context)
+    else:
+        return render(request, 'chat.html')
+   
 def projects(request):
     return render(request, 'projects.html')
 
