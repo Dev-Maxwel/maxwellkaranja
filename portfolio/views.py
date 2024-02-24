@@ -31,9 +31,11 @@ def home(request):
     return render(request, 'index.html')
 
 def chatWithMe(request):
+    output = chatWithMe
     context = {  
                "input": input,   
     }
+    render_chat = ['output', 'input']
     return render(request, 'chat.html', context)
 
 def projects(request):
