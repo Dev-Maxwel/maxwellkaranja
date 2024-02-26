@@ -48,5 +48,6 @@ def chat(request):
         return render(request, 'chat.html')
    
 def projects(request):
+    # projects = request.objects.all
     return render(request, 'projects.html')
 
