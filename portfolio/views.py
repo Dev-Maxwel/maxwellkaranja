@@ -50,5 +50,6 @@ def chat(request):
 def projects(request):
     # projects = request.objects.all
     # view_single = return HttpResponse("theis tprang amgn")
+    # view_multipleg = return HttpResponse("theis tprang amgn")
     return render(request, 'projects.html')
 
